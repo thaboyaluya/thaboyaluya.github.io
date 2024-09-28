@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Astral.CSS - CSS Grid </title>
+      <meta charset="utf-8">
+      <meta name="robots" content="index, follow">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="description" content="Astral.CSS is a lightweight, responsive and modern CSS framework for faster and extensible development. Astral provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.">
+      <meta name="author" content="Rume Aluya"><meta name="keywords" content="CSS Framework,Responsive Design,Web devlopment,Front-End Framework,UI Components,Grid System,CSS Library,Web design tool,Modern CSS Framework,Customizable Framework">   <meta property="og:image" content="./Screenshot (1).png">
+    <meta name="twitter:image" content="./Screenshot (1).png">
+      
+      <meta property="og:title" content="Astral.CSS ">
+      <meta property="og:description" content="Astral.CSS is a lightweight, responsive and modern CSS framework for faster and extensible development. Astral provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.">
+      <meta name="twitter:card" content="Astral.CSS is a lightweight, responsive and modern CSS framework for faster and extensible development. Astral provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.">
+      <meta name="twitter:site" content="@AstralCSS">
+      <meta name="twitter:creator" content="@thaboyaluya">
+      <link rel="apple-touch-icon" sizes="180x180" href="../../../../favicon_package_v0.16/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon_package_v0.16/favicon-32x32.png">
+<link rel="manifest" href="../../../../site.webmanifest">
+<link rel="mask-icon" href="../../../../favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#00304a">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon_package_v0.16/favicon-16x16.png">
+	  <link rel="stylesheet" href="../../../../css/github.css">
+	  <link rel="stylesheet" href="../../../../css/doc.css">
+      <link rel="stylesheet" href="../../../../css/font-awesome.min.css">
+    
+</head>
+<body>
+
+	<ul id="nav-mobile" class="sidenav">
+				<a href="../../../../index.html"><h1 class="text-is-center ">Astral.CSS</h1></a>
+			<div class="tag-group justify-content-center has-addons">
+		  <span class="tag gray">Astral</span>
+		  <span class="tag info">v.2.3.4</span>
+		 </div>
+		 <div class="d-flex justify-content-center">
+			<span  id="icon" class="mb-0 cursor-pointer  fs-4-sm fs-3-md fs-2-lg"></span>
+		 </div>
+	
+	<div class="mb-5">
+		  <div class="my-2 mx-4">
+		<input id="search" class="form-input" placeholder="Search...">
+				
+				
+			
+		  </div>
+		  
+			<div class="search-results"></div>
+		</div>
+		<div class="mb-4">
+			  <ul class="list-unstyled m-0">
+			  <li class="sidebar nav-item-mobile w-100 is-hoverable">
+				<a class="nav-link" href="#" data-dropdown="get-started-dropdown" >Getting Started</a>
+				 <div class="dropdown-sidebar" role="menu" id="get-started-dropdown">
+				   <div class="navbar-dropdown">
+					 <a href="../../../documentation/get-started/introduction/get-started.html" class="navbar-item">
+					   Introduction
+					 </a>
+					 <a  href="../../../documentation/get-started/download/download.html"  class="navbar-item">
+					   Download
+					 </a>
+				 </div>
+				 </div>
+			   </li>
+	
+			 <li class="sidebar nav-item-mobile w-100 is-hoverable">
+				<a class="nav-link" href="#" data-dropdown="layout-dropdown" >Layout</a>
+				 <div class="dropdown-sidebar" role="menu" id="layout-dropdown">
+				   <div class="navbar-dropdown">
+					 <a href="../../../documentation/layout/breakpoints/breakpoints.html" class="navbar-item">
+					   Breakpoints
+					 </a>
+					 <a  href="../../../documentation/layout/grid/grid.html"  class="navbar-item">
+					   Grid
+					 </a>
+					 <a  href="../../../documentation/layout/css grid/css-grid.html"  class="navbar-item">
+				  CSS Grid
+					 </a>
+				 </div>
+				 </div>
+			   </li>
+	
+			   <li class="sidebar nav-item-mobile w-100 is-hoverable">
+				<a class="nav-link" href="#" data-dropdown="form-dropdown" >Form</a>
+				 <div class="dropdown-sidebar" role="menu" id="form-dropdown">
+				   <div class="navbar-dropdown">
+					 <a href="../../../documentation/form2/overview/form-overview.html" class="navbar-item">
+					 Overview
+					 </a>
+					 <a  href="../../../documentation/form2/form control/form-control.html"  class="navbar-item">
+					   Form Control
+					 </a>
+					 <a  href="../../../documentation/form2/select/form-select.html"  class="navbar-item">
+					  Select
+					</a>
+					<a  href="../../../documentation/form2/range/form-range.html"  class="navbar-item">
+					 Range
+					</a>
+					 <a  href="../../../documentation/form2/input group/input-groups.html"  class="navbar-item">
+			   Input Group
+					 </a>
+				<a  href="../../../documentation/form2/form layouts/form-layouts.html"  class="navbar-item">
+				Form Layouts
+						</a>
+
+				<a  href="../../../documentation/form2/check and radio/checkboxes-and-radios.html"  class="navbar-item">
+				Checkbox and Radio
+				</a>
+				 </div>
+				 </div>
+			   </li>
+
+			   <li class="sidebar nav-item-mobile w-100 is-hoverable">
+				<a class="nav-link" href="#" data-dropdown="components-dropdown" >Components</a>
+				 <div class="dropdown-sidebar" role="menu" id="components-dropdown">
+				   <div class="navbar-dropdown">
+					 <a href="../../../documentation/components/alert/alerts.html" class="navbar-item">
+					 Alerts
+					 </a>
+		
+					 <a  href="../../../documentation/components/animation/animations.html"  class="navbar-item">
+					   Animation
+					 </a>
+					 <a  href="../../../documentation/components/article/articles.html"  class="navbar-item">
+					  Article
+					</a>
+					<a  href="../../../documentation/components/breadcrumbs/breadcrumbs.html"  class="navbar-item">
+					Breadcrumbs
+					</a>
+					 <a  href="../../../documentation/components/button/buttons.html"  class="navbar-item"> Button</a>
+					<a  href="../../../documentation/components/cards/cards.html"  class="navbar-item">Cards</a>
+					<a  href="../../../documentation/components/chips/chips.html"  class="navbar-item">Chips</a>
+					<a  href="../../../documentation/components/divider/dividers.html"  class="navbar-item">Dividers</a>
+			<a  href="../../../documentation/components/dropdown/dropdown.html"  class="navbar-item">Dropdown</a><a  href="../../../documentation/components/footer/footers.html"  class="navbar-item">Footer</a>
+					<a  href="../../../documentation/components/message/message.html"  class="navbar-item">Message</a>
+					<a  href="../../../documentation/components/modal/modals.html"  class="navbar-item"> Modal</a>
+					<a  href="../../../documentation/components/navigation/navigation.html"  class="navbar-item">Navigation</a>
+                    <a  href="../../../documentation/components/notification/notifications.html"  class="navbar-item">Notification</a>
+					<a  href="../../../documentation/components/pagination/pagination.html"  class="navbar-item">Pagination</a>
+	              
+					<a  href="../../../documentation/components/progress bar/progressbars.html"  class="navbar-item">Progress Bars</a>
+					
+					<a  href="../../../documentation/components/section/sections.html"  class="navbar-item">Section</a>
+					<a  href="../../../documentation/components/table/tables.html"  class="navbar-item">Table</a>
+					<a  href="../../../documentation/components/tabs/tabs.html"  class="navbar-item">Tabs</a>
+					<a  href="../../../documentation/components/tags/tags.html"  class="navbar-item">Tags</a>
+					<a  href="../../../documentation/components/tooltip/tooltips.html"  class="navbar-item">Tooltip</a>
+					
+				 </div>
+				 </div>
+			   </li> 
+			   <li class="sidebar nav-item-mobile w-100 is-hoverable">
+				<a class="nav-link" href="#" data-dropdown="utilities-dropdown" >Utilities</a>
+				 <div class="dropdown-sidebar" role="menu" id="utilities-dropdown">
+				   <div class="navbar-dropdown">
+			<a href="../../../documentation/utilities/background/background.html" class="navbar-item">
+			Background
+			</a>
+			<a href="../../../documentation/utilities/border/borders.html" class="navbar-item">
+			Borders
+			</a>
+			<a href="../../../documentation/utilities/colors/colors.html" class="navbar-item">
+			Colors
+			</a>
+			<a href="../../../documentation/utilities/cursors/cursor-pointers.html" class="navbar-item">
+			Cursor Pointers
+			</a>
+			<a href="../../../documentation/utilities/display/display.html" class="navbar-item">
+			Display
+			</a>
+			<a href="../../../documentation/utilities/flex/flex.html" class="navbar-item">
+			Flex
+			</a>
+			<a href="../../../documentation/utilities/floats/float.html" class="navbar-item">
+			Floats
+			</a>
+			<a href="../../../documentation/utilities/interaction/interactions.html" class="navbar-item">
+			Interactions
+			</a>
+			<a href="../../../documentation/utilities/opacity/opacity.html" class="navbar-item">
+			Opacity
+			</a>
+			<a href="../../../documentation/utilities/overflow/overflow.html" class="navbar-item">
+			Overflow
+			</a>
+			<a href="../../../documentation/utilities/position/position.html" class="navbar-item">
+			Position
+			</a>
+			<a href="../../../documentation/utilities/shadow/shadow.html" class="navbar-item">
+			Shadow
+			</a>
+			<a href="../../../documentation/utilities/sizes/sizes.html" class="navbar-item">
+			Sizing
+			</a>
+			<a href="../../../documentation/utilities/spacing/spacing.html" class="navbar-item">
+			Spacing
+			</a>
+			<a href="../../../documentation/utilities/text/text.html" class="navbar-item">
+			Text
+			</a>
+			<a href="../../../documentation/utilities/typography/typography.html" class="navbar-item">
+			Typography
+			</a>
+			<a href="../../../documentation/utilities/vertical alignment/vertical-align.html" class="navbar-item">
+			Vertical Align
+			</a>
+			<a href="../../../documentation/utilities/visibility/visibility.html" class="navbar-item">
+			Visibility
+			</a>
+
+				 </div>
+				 </div>
+			   </li>
+   <li class="sidebar nav-item-mobile w-100 is-hoverable">
+				<a class="nav-link" href="#" data-dropdown="javascript-dropdown" >JavaScript</a>
+				 <div class="dropdown-sidebar" role="menu" id="javascript-dropdown">
+				   <div class="navbar-dropdown">
+					 <a href="../../../documentation/javascript/toast/toastify.html" class="navbar-item">
+					  Toastify
+					 </a>
+				
+					 <a  href="../../../documentation/javascript/otp generator/otp-generator.html"  class="navbar-item">
+						OTP Generator
+					    </a>
+				 </div>
+				 </div>
+			   </li>	   <li class="sidebar nav-item-mobile w-100 is-hoverable">
+				<a class="nav-link" href="#" data-dropdown="dark-mode-dropdown" >Dark Mode</a>
+				 <div class="dropdown-sidebar" role="menu" id="dark-mode-dropdown">
+				   <div class="navbar-dropdown">
+					 <a href="../../../documentation/dark mode/theme/dark-mode.html" class="navbar-item">
+					 Theme
+					 </a>
+				 </div>
+				 </div>
+			   </li>
+
+                  </ul>
+            </div>
+</ul>
+<main>
+  <div id="close-trigger-sidenav" data-target=".sidenav"></div>
+	<nav  class="navbar navbar-dark bg-primary  d-none-tab-up">
+		<a class="navbar-brand" href="#"><i id="sidebar-mobile" data-target=".sidenav" class="fa fa-bars"></i></a>
+	  
+
+	    
+		  <ul class="navbar-nav">
+		    <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="../../../../index.html">Home</a>
+		    </li>
+		    <li class="nav-item">
+			<a class="nav-link" href="../../../documentation/get-started/introduction/get-started.html">Docs</a>
+		    </li>
+
+		    <ul class="navbar-nav  flex-wrap ">
+			<li class="nav-item ">
+			  <a class="nav-link p-2" href="https://github.com/astral" target="_blank" rel="noopener">
+			    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class=" d-inline-block align-text-top" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path></svg>
+		
+			  </a>
+			</li>
+			
+		    </ul>
+		    
+	<a href="https://github.com/thaboyaluya/Astral.CSS-2.3.4/archive/refs/heads/master.zip" target="_blank" class="button align-self-center" target="_blank" > <i class="fa fa-download mr-2"></i>   Download</a>
+		  </ul>
+	
+	     
+	    
+	</nav>
+  <div class="section">
+ 
+			<h1 class="header">CSS Grids</h1>
+			<h4 class="text-weight-light fs-4"><p> CSS Grid is powerful tool that allows for two dimensional layouts to be created on the web.</p></h4>
+  
+  </div>
+
+ 
+    <div class="columns">
+  <div class="column col-sm-12 col-md-12 col-lg-10 col-10">
+	<div class="docs-content">
+    <p class="content">
+      Astral CSS Framework includes a robust CSS grid system  that empowers developers to create complex, responsive layouts with ease. Leveraging the power of CSS Grid, Astral allows you to design web pages that are both flexible and visually appealing.
+    </p>
+            <h3 class="title" id="grid-template-columns"><i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>  Grid Template Column </h3>
+            <table class="table bordered"><thead><tr><th class="">Class</th> <th class="">Properties</th></tr></thead> <tbody class=""><tr><td class=""><code>grid-cols-1</code></td> <td class="">grid-template-columns: repeat(1, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-cols-2 </code></td> <td class="">grid-template-columns: repeat(2, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-cols-3</code></td> <td class="">grid-template-columns: repeat(3, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-cols-4 </code></td> <td class="">grid-template-columns: repeat(4, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-cols-5 </code></td> <td class="">grid-template-columns: repeat(5, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-cols-6 </code></td> <td class="">grid-template-columns: repeat(6, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-cols-7</code></td> <td class="">grid-template-columns: repeat(7, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-cols-8 </code></td> <td class="">grid-template-columns: repeat(8, minmax(0, 1fr));</td></tr> <tr><td class=""> <code>grid-cols-9</code></td> <td class="">grid-template-columns: repeat(9, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-cols-10 </code></td> <td class="">grid-template-columns: repeat(10, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-cols-11</code></td> <td class="">grid-template-columns: repeat(11, minmax(0, 1fr));</td></tr> <tr><td class=""> <code>grid-cols-12</code></td> <td class="">grid-template-columns: repeat(12, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-cols-none </code></td> <td class="">grid-template-columns: none;</td></tr></tbody></table>
+
+            <p class="content">Use the <code>grid-cols-{n}</code> utilities to create grids with <em>n</em> equally sized columns.</p>
+
+<div class="panel">
+  <div class="d-grid grid-cols-3 text-is-center content gap-4">
+    <div class="bg-primary p-2">1</div> 
+    <div class="bg-secondary p-2 text-is-center">2</div> 
+    <div class="bg-primary p-2 text-is-center">3</div> 
+    <div class="bg-secondary p-2 text-is-center">4</div> 
+    <div class="bg-primary p-2 text-is-center">5</div> 
+    <div class="bg-secondary p-2 text-is-center">6</div> 
+    <div class="bg-primary p-2 text-is-center">7</div> 
+    <div class="bg-secondary p-2 text-is-center">8</div> 
+    <div class="bg-primary p-2 text-is-center">9</div>
+</div>
+</div>
+ 
+
+
+
+<pre class="user-select-all" class="block"><code data-language="html"><div class="d-grid grid-cols-3 gap-4">
+  <div>1</div> 
+  <div>2</div> 
+  <div>3</div> 
+  <div>4</div> 
+  <div>5</div> 
+  <div>6</div> 
+  <div>7</div> 
+  <div>8</div> 
+  <div>9</div>
+</div></code>
+</pre>
+
+
+
+
+<h3 class="title" id="grid-column-start-end"><i class="fa fa-link text-primary mr-1" aria-hidden="true"></i> Grid  Column Start / End </h3>
+
+<p class="content">Use this for controlling how elements are sized and placed across grid columns.</p>
+
+
+<table class="table bordered"><thead><tr><th class="">Class</th> <th class="">Properties</th></tr></thead> <tbody class=""><tr><td class=""> <code>col-auto </code></td> <td class="">grid-column: auto;</td></tr> <tr><td class=""> <code>col-span-1</code></td> <td class="">grid-column: span 1 / span 1;</td></tr> <tr><td class=""> <code>col-span-2</code></td> <td class="">grid-column: span 2 / span 2;</td></tr> <tr><td class=""> <code>col-span-3 </code></td> <td class="">grid-column: span 3 / span 3;</td></tr> <tr><td class=""> <code>col-span-4</code></td><td class="">grid-column: span 4 / span 4;</td></tr> <tr><td class=""> <code>col-span-5 </code></td> <td class="">grid-column: span 5 / span 5;</td></tr> <tr><td class=""> <code> col-span-6</code></td> <td class="">grid-column: span 6 / span 6;</td></tr> <tr><td class=""> <code>col-span-7 </code></td> <td class="">grid-column: span 7 / span 7;</td></tr> <tr><td class="">  <code>col-span-8</code></td> <td class="">grid-column: span 8 / span 8;</td></tr> <tr><td class=""> <code>col-span-9</code> </td> <td class="">grid-column: span 9 / span 9;</td></tr> <tr><td class=""> <code>col-span-10</code> </td> <td class="">grid-column: span 10 / span 10;</td></tr> <tr><td class=""> <code>col-span-11</code> </td> <td class="">grid-column: span 11 / span 11;</td></tr> <tr><td class=""> <code>col-span-12</code> </td> <td class="">grid-column: span 12 / span 12;</td></tr> <tr><td class=""> <code>col-start-1</code> </td> <td class="">grid-column-start: 1;</td></tr> <tr><td class=""> <code>col-start-2</code> </td> <td class="">grid-column-start: 2;</td></tr> <tr><td class=""> <code>col-start-3</code> </td> <td class="">grid-column-start: 3;</td></tr> <tr><td class=""> <code>col-start-4</code> </td> <td class="">grid-column-start: 4;</td></tr> <tr><td class=""> <code>col-start-5</code> </td> <td class="">grid-column-start: 5;</td></tr> <tr><td class=""> <code>col-start-6</code> </td> <td class="">grid-column-start: 6;</td></tr> <tr><td class=""> <code>col-start-7</code> </td> <td class="">grid-column-start: 7;</td></tr> <tr><td class=""> <code>col-start-8</code> </td> <td class="">grid-column-start: 8;</td></tr> <tr><td class=""> <code>col-start-9</code> </td> <td class="">grid-column-start: 9;</td></tr> <tr><td class=""> <code>col-start-10</code> </td> <td class="">grid-column-start: 10;</td></tr> <tr><td class=""> <code>col-start-11</code> </td> <td class="">grid-column-start: 11;</td></tr> <tr><td class=""> <code>col-start-12</code> </td> <td class="">grid-column-start: 12;</td></tr> <tr><td class=""> <code>col-start-auto</code> </td> <td class="">grid-column-start: auto;</td></tr> <tr><td class=""> <code> col-end-1</code></td> <td class="">grid-column-end: 1;</td></tr> <tr><td class=""> <code>col-end-2</code> </td> <td class="">grid-column-end: 2;</td></tr> <tr><td class=""> <code> col-end-3</code></td> <td class="">grid-column-end: 3;</td></tr> <tr><td class=""> <code>col-end-4</code> </td> <td class="">grid-column-end: 4;</td></tr> <tr><td class=""> <code>col-end-5</code> </td> <td class="">grid-column-end: 5;</td></tr> <tr><td class=""> <code>col-end-6</code> </td> <td class="">grid-column-end: 6;</td></tr> <tr><td class=""> <code>col-end-7</code> </td> <td class="">grid-column-end: 7;</td></tr> <tr><td class=""> <code>col-end-8</code> </td> <td class="">grid-column-end: 8;</td></tr> <tr><td class=""> <code> col-end-9</code></td> <td class="">grid-column-end: 9;</td></tr> <tr><td class=""> <code> col-end-10</code></td> <td class="">grid-column-end: 10;</td></tr> <tr><td class=""> <code>col-end-11</code> </td> <td class="">grid-column-end: 11;</td></tr> <tr><td class=""><code>col-end-12</code> </td> <td class="">grid-column-end: 12;</td></tr> <tr><td class=""> <code>col-end-auto</code> </td> <td class="">grid-column-end: auto;</td></tr></tbody></table>
+
+
+<h3 class="title" id="spanning-column">
+      <i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>   
+    Spanning column
+    </h3>
+
+    <p class="content">Use the <code>col-span-{n}</code> utilities to make an element span <em>n</em> columns.</p>
+
+
+<div class="panel">
+  <div class="d-grid grid-cols-3 content gap-4">
+    <div class="col-span-3 bg-primary p-4"></div> 
+    <div class="col-span-2 bg-secondary p-4"></div> 
+    <div class="col-span-1 bg-primary p-4"></div> 
+    <div class="col-span-1 bg-primary p-4"></div> 
+    <div class="col-span-2 bg-secondary p-4"></div>
+</div>
+</div>
+
+
+
+
+<pre class="user-select-all" class="block"><code data-language="html"><div class="d-grid grid-cols-3 gap-4">
+  <div class="col-span-3 "></div> 
+  <div class="col-span-2"></div> 
+  <div class="col-span-1 "></div> 
+  <div class="col-span-1 "></div> 
+  <div class="col-span-2"></div>
+</div>    
+</code></pre>
+
+<h3 class="title" id="starting-and-ending-line-columns">
+      <i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>   
+    Starting and ending line
+    </h3>
+
+    <p class="content">Use the <code>col-start-{n}</code> and <code>col-end-{n}</code> utilities to make an element start or end at the <em>nth</em> grid line. These can also be combined with the <code>col-span-{n}</code> utilities to span a specific number of columns.</p>
+    
+    <div class="alert info">
+      <div class="alert-body">
+        <p>Note that CSS grid lines start at 1, not 0, so a full-width element in a 6-column grid would start at line 1 and end at line 7.</p>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="d-grid content grid-cols-6 gap-4">
+        <div class="col-start-2 col-span-4 bg-primary p-4"></div>
+        <div class="col-start-1 col-end-3 bg-secondary p-4"></div>
+        <div class="col-end-7 col-span-2 bg-secondary p-4"></div>
+        <div class="col-start-1 col-end-7 bg-primary p-4"></div>
+      </div>
+    </div>
+ 
+
+<pre class="user-select-all" class="block"><code data-language="html"><div class="d-grid grid-cols-6 gap-4">
+  <div class="col-start-2 col-span-4 ..."></div>
+  <div class="col-start-1 col-end-3 ..."></div>
+  <div class="col-end-7 col-span-2 ..."></div>
+  <div class="col-start-1 col-end-7 ..."></div>
+</div>    
+</code></pre>
+
+
+
+
+
+
+
+<h3 class="title" id="grid-template-rows">
+      <i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>   
+    Grid Template Rows
+    </h3>
+
+    <p class="content">Use for specifying the rows in a grid layout..</p>
+
+    <table class="table bordered"><thead><tr><th class="">Class</th> <th class="">Properties</th></tr></thead> <tbody class=""><tr><td class=""> <code>grid-rows-1</code></td> <td class="">grid-template-rows: repeat(1, minmax(0, 1fr));</td></tr> <tr><td class=""> <code>grid-rows-2</code></td> <td class="">grid-template-rows: repeat(2, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-rows-3</code></td> <td class="">grid-template-rows: repeat(3, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-rows-4 </code></td> <td class="">grid-template-rows: repeat(4, minmax(0, 1fr));</td></tr> <tr><td class=""><code>grid-rows-5 </code></td> <td class="">grid-template-rows: repeat(5, minmax(0, 1fr));</td></tr> 
+  
+  
+      <tr><td class=""><code>grid-rows-6 </code></td> <td class="">grid-template-rows: repeat(6, minmax(0, 1fr));</td>
+    </tr> 
+    
+    <tr><td class=""><code>grid-rows-7 </code></td> <td class="">grid-template-rows: repeat(7, minmax(0, 1fr));</td>
+    </tr> 
+    
+    
+    <tr><td class=""><code>grid-rows-8 </code></td> <td class="">grid-template-rows: repeat(8, minmax(0, 1fr));</td>
+    </tr> 
+    
+    
+    <tr><td class=""><code>grid-rows-9 </code></td> <td class="">grid-template-rows: repeat(9, minmax(0, 1fr));</td>
+    </tr> 
+    
+    
+    <tr><td class=""><code>grid-rows-10 </code></td> <td class="">grid-template-rows: repeat(10, minmax(0, 1fr));</td>
+    </tr> 
+    
+    
+    <tr><td class=""><code>grid-rows-11 </code></td> <td class="">grid-template-rows: repeat(11, minmax(0, 1fr));</td>
+    </tr> 
+    
+    
+    <tr><td class=""><code>grid-rows-12 </code></td> <td class="">grid-template-rows: repeat(12, minmax(0, 1fr));</td>
+    </tr> 
+    <tr><td class=""> <code>grid-rows-none</code></td> <td class="">grid-template-rows: none;</td></tr>
+    </tbody>
+    </table>  
+
+
+    <p class="content">Use the <code>grid-rows-{n}</code> utilities to create grids with <em>n</em> equally sized rows.</p>
+
+<div class="panel">
+  <div class="d-grid content grid-rows-3 grid-flow-col gap-4">
+    <div class="bg-secondary p-4 text-is-center">1</div> 
+    <div class="bg-primary p-4 text-is-center">2</div> 
+    <div class="bg-secondary p-4 text-is-center">3</div> 
+    <div class="bg-primary p-4 text-is-center">4</div> 
+    <div class="bg-secondary p-4 text-is-center">5</div> 
+    <div class="bg-primary p-4 text-is-center">6</div> 
+    <div class="bg-secondary p-4 text-is-center">7</div> 
+    <div class="bg-primary p-4 text-is-center">8</div> 
+    <div class="bg-secondary p-4 text-is-center">9</div>
+</div>
+</div>
+
+
+<pre class="user-select-all" class="block"><code data-language="html"><div class="d-grid grid-rows-3 grid-flow-col gap-4">
+  <div class="...">1</div> 
+  <div class="...">2</div> 
+  <div class="...">3</div> 
+  <div class="...">4</div> 
+  <div class="...">5</div> 
+  <div class="...">6</div> 
+  <div class="...">7</div> 
+  <div class="...">8</div> 
+  <div class="...">9</div>
+</div>    
+</code></pre>
+<h3 class="title" id="spanning-row">
+      <i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>   
+    Spanning row
+    </h3>
+    <p class="content">Use the <code>row-span-{n}</code> utilities to make an element span <em>n</em> rows.</p>
+
+
+    <div class="panel">
+      <div class="d-grid grid-rows-4 grid-flow-col gap-4">
+  
+        <div class=" col-span-2 row-span-1   bg-primary p-4"></div>
+        <div class=" row-span-2 col-span-2 bg-primary p-4"></div>
+        <div class=" row-span-1 col-span-2 bg-primary p-4"></div>
+        <div class=" row-span-4 bg-secondary p-4"></div> 
+      </div>
+    </div>
+  
+
+
+<pre class="user-select-all" class="block"><code data-language="html">
+<div class="d-grid grid-rows-4 grid-flow-col gap-4">
+  <div class=" col-span-2 row-span-1   ..."></div>
+  <div class=" row-span-2 col-span-2 ..."></div>
+  <div class=" row-span-1 col-span-2 ..."></div>
+  <div class=" row-span-4 ..."></div> 
+</div>  
+</code></pre>
+
+    <h3 class="title" id="starting-and-ending-line-row">
+      <i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>  Starting and ending line
+    </h3>
+
+    <p class="content">Use the <code>row-start-{n}</code> and <code>row-end-{n}</code> utilities to make an element start or end at the <em>nth</em> grid line. These can also be combined with the <code>row-span-{n}</code> utilities to span a specific number of rows.</p>
+
+    <div class="alert info">
+      <div class="alert-body">
+        <p>Note that CSS grid lines start at 1, not 0, so a full-height element in a 3-row grid would start at line 1 and end at line 4.</p>
+      </div>
+    </div>
+
+
+    <div class="panel">
+      <div class="d-grid content grid-rows-3 grid-flow-col gap-4">
+        <div class="row-start-2 row-span-2 bg-secondary p-4"></div> 
+        <div class="row-end-3 row-span-2 bg-primary p-4"></div> 
+        <div class="row-start-1 row-end-4 bg-secondary p-4"></div>
+  </div>
+    </div>
+
+
+
+<pre class="user-select-all" class="block"><code data-language="html"> <div class="d-grid grid-rows-3 grid-flow-col gap-4">
+    <div class="row-start-2 row-span-2 ..."></div> 
+    <div class="row-end-3 row-span-2 ..."></div> 
+    <div class="row-start-1 row-end-4 ..."></div>
+ </div>    
+</code></pre>
+
+<table class="table bordered">
+      <thead>
+        <tr>
+          <th>
+            Class
+          </th>
+          <th>
+            Properties
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td><code>gap-1</code></td>
+        <td> gap: .25rem</td>
+        </tr>
+        <tr>
+        <td><code>gap-2</code></td>
+        <td> gap: .5rem</td>
+        </tr>
+        <tr>
+        <td><code>gap-3</code></td>
+        <td>gap: .7rem</td>
+        </tr>
+        <tr>
+        <td><code>gap-4</code></td>
+        <td>gap: 1rem</td>
+        </tr>
+    
+        <tr>
+          <td><code>gap-5</code></td>
+          <td>gap: 1.2rem</td>
+          </tr>
+    
+          <tr>
+            <td><code>gap-6</code></td>
+            <td>gap: 1.5rem</td>
+            </tr>
+      </tbody>
+    </table>
+
+
+    <h3 class="title" id="gap">
+      <i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>   
+    Gap
+    </h3>
+    <p class="content">Use <code>gap-{size}</code>  to change the gutter size in grid layouts.</p>
+
+
+<div class="panel">
+  <div class="content">
+    <div class="d-grid grid-cols-2 gap-1"><div class="bg-primary p-4"></div> <div class="bg-secondary p-4 "></div> <div class="bg-secondary p-4 "></div> <div class="bg-primary p-4"></div></div>
+  
+  </div>
+
+  <div class="content">
+    <div class="d-grid grid-cols-2 gap-2"><div class="bg-primary p-4"></div> <div class="bg-secondary p-4 "></div> <div class="bg-secondary p-4 "></div> <div class="bg-primary p-4"></div></div>
+  
+  </div>
+
+
+  <div class="content">
+    <div class="d-grid grid-cols-2 gap-5"><div class="bg-primary p-4"></div> <div class="bg-secondary p-4 "></div> <div class="bg-secondary p-4 "></div> <div class="bg-primary p-4"></div></div>
+  
+  </div>
+
+
+  <div class="content">
+    <div class="d-grid grid-cols-2 gap-6"><div class="bg-primary p-4"></div> <div class="bg-secondary p-4 "></div> <div class="bg-secondary p-4 "></div> <div class="bg-primary p-4"></div></div>
+  
+  </div>
+
+</div>
+    
+
+
+<pre class="user-select-all" class="block"><code data-language="html">
+<div class="d-grid grid-cols-2 gap-1">
+   <!-- ... -->
+</div>
+<div class="d-grid grid-cols-2 gap-2">
+  <!-- ... -->
+</div> 
+<div class="d-grid grid-cols-2 gap-5">
+  <!-- ... -->
+</div>
+<div class="d-grid grid-cols-2 gap-6">
+  <!-- ... -->
+</div>    
+</code></pre>
+
+
+
+<h3 class="title" id="row-gap">
+      <i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>   
+    Row Gap
+</h3>
+
+<p class="content">Use <code>col-gap-{size}</code> to change the gutter size between columns in grid layouts.</p>
+
+<table class="table bordered">
+      <thead>
+        <tr>
+          <th>
+            Class
+          </th>
+          <th>
+            Properties
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td><code>row-gap-1</code></td>
+        <td> row-gap: .25rem</td>
+        </tr>
+        <tr>
+        <td><code>row-gap-2</code></td>
+        <td> row-gap: .5rem</td>
+        </tr>
+        <tr>
+        <td><code>row-gap-3</code></td>
+        <td>row-gap: .7rem</td>
+        </tr>
+        <tr>
+        <td><code>row-gap-4</code></td>
+        <td>row-gap: 1rem</td>
+        </tr>
+    
+        <tr>
+          <td><code>row-gap-5</code></td>
+          <td>row-gap: 1.2rem</td>
+          </tr>
+    
+          <tr>
+            <td><code>row-gap-6</code></td>
+            <td>row-gap: 1.5rem</td>
+            </tr>
+      </tbody>
+    </table>
+
+
+    <div class="panel">
+      <div class="content">
+        <div class="d-grid grid-cols-2 row-gap-1"><div class="bg-primary p-4 "></div> <div class="bg-secondary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-primary p-4 "></div></div>
+      </div>
+  
+      <div class="content">
+        <div class="d-grid grid-cols-2 row-gap-2"><div class="bg-primary p-4 "></div> <div class="bg-secondary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-primary p-4 "></div></div>
+      </div>
+  
+  
+      <div class="content">
+        <div class="d-grid grid-cols-2 row-gap-5"><div class="bg-primary p-4 "></div> <div class="bg-secondary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-primary p-4 "></div></div>
+      </div>
+  
+  
+      <div class="content">
+        <div class="d-grid grid-cols-2 row-gap-6"><div class="bg-primary p-4 "></div> <div class="bg-secondary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-primary p-4 "></div></div>
+      </div>
+    </div>
+
+
+
+<pre class="user-select-all" class="block"><code data-language="html">
+<div class="d-grid grid-cols-2 row-gap-1">
+  <!-- ... -->
+</div>
+<div class="d-grid grid-cols-2 row-gap-2">
+  <!-- ... -->
+</div> 
+<div class="d-grid grid-cols-2 row-gap-5">
+  <!-- ... -->
+</div>
+<div class="d-grid grid-cols-2 row-gap-6">
+  <!-- ... -->
+</div>    
+</code></pre>
+
+
+
+<h3 class="title" id="column-gap">
+      <i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>   
+    Column Gap
+    </h3>
+<p class="content">Use <code>col-gap-{size}</code> to change the gutter size between columns in grid layouts.</p>  
+
+<table class="table bordered">
+      <thead>
+        <tr>
+          <th>
+            Class
+          </th>
+          <th>
+            Properties
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td><code>col-gap-1</code></td>
+        <td> column-gap: .25rem</td>
+        </tr>
+        <tr>
+        <td><code>col-gap-2</code></td>
+        <td> column-gap: .5rem</td>
+        </tr>
+        <tr>
+        <td><code>col-gap-3</code></td>
+        <td>column-gap: .7rem</td>
+        </tr>
+        <tr>
+        <td><code>col-gap-4</code></td>
+        <td>column-gap: 1rem</td>
+        </tr>
+    
+        <tr>
+          <td><code>col-gap-5</code></td>
+          <td>column-gap: 1.2rem</td>
+          </tr>
+    
+          <tr>
+            <td><code>col-gap-6</code></td>
+            <td>column-gap: 1.5rem</td>
+            </tr>
+      </tbody>
+    </table>
+
+
+<div class="panel">
+  <div class="content">
+    <div class="d-grid grid-cols-2 col-gap-1"><div class="bg-primary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-primary p-4"></div></div>
+  
+  </div>
+
+  <div class="content">
+    <div class="d-grid grid-cols-2 col-gap-2"><div class="bg-primary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-primary p-4"></div></div>
+  
+  </div>
+
+  <div class="content">
+    <div class="d-grid grid-cols-2 col-gap-5"><div class="bg-primary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-primary p-4"></div></div>
+  
+  </div>
+
+  <div class="content">
+    <div class="d-grid grid-cols-2 col-gap-6"><div class="bg-primary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-secondary p-4"></div> <div class="bg-primary p-4"></div></div>
+  
+  </div>
+</div>
+
+
+
+<pre class="user-select-all" class="block"><code data-language="html">
+<div class="d-grid grid-cols-2 col-gap-1">
+  <!-- ... -->
+</div>
+<div class="d-grid grid-cols-2 col-gap-2">
+  <!-- ... -->
+</div> 
+<div class="d-grid grid-cols-2 col-gap-5">
+  <!-- ... -->
+</div>
+<div class="d-grid grid-cols-2 col-gap-6">
+  <!-- ... -->
+</div>    
+</code></pre>
+
+<h3 class="title" id="others">
+      <i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>   
+    Others
+</h3>
+
+<p class="content">These are the other utility classes in Astral <strong>CSS Grids</strong></p>
+<table class="table bordered">
+      <thead>
+        <tr>
+          <th>
+            Class
+          </th>
+          <th>
+            Properties
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td><code>grid-flow-row</code></td>
+        <td>grid-auto-flow: row;</td>
+        </tr>
+        <tr>
+        <td><code>grid-flow-col</code></td>
+        <td> grid-auto-flow: column;</td>
+        </tr>
+        <tr>
+        <td><code>grid-flow-row-dense</code></td>
+        <td>grid-auto-flow: row dense;</td>
+        </tr>
+        <tr>
+        <td><code>grid-flow-row-dense</code></td>
+        <td>grid-auto-flow: row dense;</td>
+        </tr>
+    
+        <tr>
+          <td><code>grid-flow-col-dense</code></td>
+          <td>grid-auto-flow: column dense;</td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		  
+	</div>
+  </div>
+  <div class="column toc col-2">
+      <div class="bd-toc">
+      <strong class="d-block  my-2 pb-2">On this page</strong>
+            <ul class="list-unstyled scrollspy-nav">
+                  <li><a href="#grid-template-columns">Grid Template Column</a></li>
+                  <li><a href="#grid-column-start-end">Grid Column Start / End</a></li>
+                  <li><a href="#spanning-column">Spanning column</a></li>
+                  <li><a href="#starting-and-ending-line-column">Starting and ending line</a></li>
+                  <li><a href="#grid-template-rows">Grid Template Rows</a></li>
+                  <li><a href="#grid-row-start-end">Grid Row Start / End</a></li>
+                  <li><a href="#spanning-row">Spanning row</a></li>
+                  <li><a href="#starting-and-ending-line-row">Starting and ending line</a></li>
+                  <li><a href="#gap"> Gap</a></li>
+                  <li><a href="#row-gap">Row Gap</a></li>
+                  <li><a href="#column-gap">Column Gap</a></li>
+                  <li><a href="#others">Others</a></li>
+                  </ul>
+      </div>
+         </div>
+    </div>
+
+    <footer class="footer text-weight-light  pt-5">
+	   <div class="container">
+                    <div class="columns">
+                      <div class="column col-sm-12  col-md-6  col-lg-8">
+                        <h5 class="text-light">Astral.css</h5>
+                        <p class="text-light">Astral is a free CSS framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces.</p>
+                      </div>
+                      <div class="column col-sm-12 col-md-6 col-lg-2">
+                        <h5 class="text-light">Useful Links</h5>
+                  <ul class="list-unstyled">
+	<li><a class="text-light" href="../../../../astral/documentation/get-started/introduction/get-started.html">Introduction</a></li>
+	<li><a class="text-light" href="../../../../astral/documentation/get-started/download/download.html">Download</a></li>
+	<li><a class="text-light" href="../../../../astral/documentation/utilities/typography/typography.html">Typography</a></li>
+	<li><a class="text-light" href="../../../../astral/documentation/javascript/toast/toastify.html">Toastify</a></li>
+	<li><a class="text-light" href="../../../../astral/documentation/javascript/otp generator/otp-generator.html">One Time Password Generator</a></li>
+    </ul>
+                      </div>
+      
+                      <div class="column col-sm-12 col-md-6 col-lg-2">
+                        <h5 class="text-light">We are Social</h5>
+                        <ul class="list-unstyled">
+                          <li><a class="text-light" target="_blank" href="https://twitter.com/aluya_rume"><i class="fa fa-twitter"></i></a></li>
+                          <li><a class="text-light" target="_blank" href="https://instagram.com/joseph_aluya"><i class="fa fa-instagram"></i></a></li>
+                          <li><a class="text-light" target="_blank" href="https://facebook.com/oghenerume.aluya"><i class="fa fa-facebook"></i></a></li>
+                         
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+	<div class="footer-copyright ">
+	  <div class="container d-flex justify-content-space-between py-3 align-items-center">
+		<p class="mb-0">Designed and built with <span class="text-error">♥</span> by <a class="text-light" href="https://twitter.com/aluya_rume" target="_blank">Rume Aluya</a>.</p>
+	  </div>
+	</div>
+  </footer>
+</main>
+
+
+
+
+
+
+
+
+<script src="../../../../js/astral.js"></script>
+<script src="../../../../js/rainbow.min.js"></script>
+<script src="../../../../js/jquery-3.3.1.js"></script>
+<script src="../../../../js/lunr.min.js"></script>
+<script src="../../../../js/search.js"></script>
+</body>
+</html>
+
+
+
+
+
