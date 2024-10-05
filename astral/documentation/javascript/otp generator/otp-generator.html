@@ -284,32 +284,45 @@
   </div>
 
 
-  <form class="block mx-auto w-50">
-      <div class="form-field">
-            <label class="form-label">Password</label>
-            <input readonly class="form-input user-select-all" id="otpText"  type="number" placeholder="Generate your first OTP..."> 
-		<!-- <textarea readonly class="form-input"  name="" id="otpText" placeholder="Generate your first OTP..." ></textarea>      -->
-            </div>
-            <div class="form-field">
-                  <label for="membership">OTP Limit</label>
-                  <input required id="otpLimit" oninput="this.setAttribute('value', this.value);" class="slider tooltip" type="range" min="1" max="6" step="1" value="4">
-                </div>
+
+
+<div class="docs-content">
+	<h3 class="title">
+		What is a One-Time Password (OTP)?
+		  </h3>
+<p class="content">A <strong> One-Time Password (OTP) </strong>is a unique code that is generated and used for a single login or transaction. OTPs are typically used in multi-factor authentication (MFA) to add an extra layer of security. Once the OTP is used, it cannot be reused, making it more secure than traditional passwords.</p><p class="content">One-time passwords are commonly used for:</p>
+<ul class="mb-8">
+	<li class="mb-2">Secure logins to banking or financial services.</li>
+	<li class="mb-2">Two-factor authentication (2FA) for email, social media, and cloud storage accounts.</li>
+	<li>Verification codes sent via SMS or email for identity confirmation.</li>
+</ul>
 
 
 
 
 
-<div class="form-field  d-flex align-items-center justify-content-center">
-      <button class="button" id="otpButton">GENERATE OTP</button>
-</div>
-           
+<form class="block mx-auto w-50">
+	<div class="form-field input-group">
+		<input readonly="" class="form-input user-select-all" id="otpText" type="number" placeholder="Generate your first OTP..."> 
+		<button class="button" id="otpButton">GENERATE OTP</button>
+		</div>
+		<div class="form-field">
+			<label for="membership">OTP Limit</label>
+			<input required="" id="otpLimit" oninput="this.setAttribute('value', this.value);" class="slider tooltip" type="range" min="1" max="6" step="1" value="4">
+		    </div>
 
-             
-             
+	     
+
+		 
+		 
 
 </form>
 
-<div class="docs-content">
+
+
+
+
+<h2 class="text-weight-bold text-is-center mb-6">How to use our OTP Generator</h2>
 
 
 	<h3 class="title">
