@@ -1,6 +1,6 @@
 # Welcome to Astral.CSS V 2.3.1!
 
-Hi! Welcome to **Astral.CSS!** Astral is a free CSS framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces.
+Hi! Welcome to **Astral.CSS!** Astral.CSS is a free CSS framework that offers a collection of ready-to-use frontend components, allowing you to effortlessly combine them to create responsive web interfaces.
 
 > **NOTE**: Astral.CSS also support dark mode and light mode which is very cool.
 
