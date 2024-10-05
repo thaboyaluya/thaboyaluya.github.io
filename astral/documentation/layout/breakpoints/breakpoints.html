@@ -282,6 +282,9 @@
 	<p class="content">In the world of web development, <strong>responsive design</strong> is crucial for delivering an optimal user experience across various devices. <strong>Astral CSS Framework</strong> makes it easy to create responsive websites by utilizing breakpoints. Breakpoints are specific points in the CSS where the layout of a webpage changes to adapt to different screen sizes and resolutions.
 	</p>
 
+	<h3>What Are CSS Breakpoints?</h3>
+	<p class="content">CSS breakpoints are specific points defined in a stylesheet where a website’s layout needs to change to best fit different screen sizes. They allow you to apply different styles to your site depending on the width or height of the viewport, ensuring an optimal viewing experience on all devices, from smartphones to large desktops.Breakpoints are used in combination with media queries, a feature in CSS that applies styles based on device characteristics like screen width.</p>
+
 	<h3>Why Use Breakpoints?</h3>
 	<p class="content">Breakpoints allow you to design websites that look great on any device, from smartphones to desktops. By defining breakpoints, you can ensure that your content is accessible and visually appealing, regardless of the screen size.</p>
 	<h3 id="core-concepts" class="title">
@@ -302,13 +305,14 @@
 			<i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>  Available Breakpoints</h3>
 
 
-			<p class="content">Astral provides a set of predefined breakpoints that cover the most common device sizes. These breakpoints help you create a seamless and responsive design:</p>
+			<p class="content">Astral.CSS provides a set of predefined breakpoints that cover the most common device sizes. These breakpoints help you create a seamless and responsive design:</p>
 
 <div class="table-container">
 	<table class="table">
 		<thead>
 		  <tr>
 		    <th>Breakpoint</th>
+		    <th>Description</th>
 		    <th>Class infix</th>
 		    <th>Dimensions</th>
 		  </tr>
@@ -316,21 +320,25 @@
 		<tbody>
 		  <tr>
 		    <td>Small (Smartphones)</td>
+		    <td>The default styles are applied for smaller screens.</td>
 		    <td><code>sm</code></td>
 		    <td>&lt;767px</td>
 		  </tr>
 		  <tr>
 		    <td>Medium (Tablets)</td>
+		    <td>At a width of 768px, the layout adjusts for tablets.</td>
 		    <td><code>md</code></td>
 		    <td>≥768px</td>
 		  </tr>
 		  <tr>
 		    <td>Large (Desktops)</td>
+		    <td>At 992px, the content is optimized for larger screens like laptops.</td>
 		    <td><code>lg</code></td>
 		    <td>≥992px</td>
 		  </tr>
 		  <tr>
 		    <td>Extra large (Large Desktops)</td>
+		    <td>At 1200px and above, the layout adapts to desktop monitors.</td>
 		    <td><code>xl</code></td>
 		    <td>≥1200px</td>
 		  </tr>
@@ -338,9 +346,33 @@
 	    </table>
 </div>
 
+<h3 id="standard-css-breakpoints" class="title">
+	<i class="fa fa-link text-primary mr-1" aria-hidden="true"></i> Standard CSS Breakpoints</h3>
+
+<p class="content">As devices evolve, the <strong>standard CSS breakpoints</strong>  may shift slightly, but certain device sizes remain foundational for responsive design. Here are some widely used breakpoints that are considered standard </p>
+<ul>
+	<li class="mb-2"><strong>320px to 480px:</strong>Small mobile devices (e.g., iPhone SE, older Android phones)</li>
+	<li class="mb-2"><strong>481px to 768px:</strong>Larger mobile devices and small tablets (e.g., iPhone 12/13, iPad Mini)</li>
+	<li class="mb-2"><strong>769px to 1024px:</strong>Tablets and smaller laptops (e.g., iPad Pro, smaller Chromebooks)</li>
+	<li class="mb-2"><strong>1025px to 1200px:</strong> Laptops and small desktops (e.g., MacBook Pro, Surface laptops)</li>
+	<li><strong>1201px and above:</strong>Large desktops and wide screens (e.g., widescreen monitors)</li>
+</ul>
 
 
-<p class="content"> Breakpoints are an essential part of creating responsive designs. With the <strong>Astral CSS Framework</strong>, you can easily implement breakpoints to ensure your website looks great on any device. Start using Astral today and take your web design to the next level!</p>
+<h3 id="best-practices-for-using-css-breakpoints" class="title">
+	<i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>  Best Practices for Using CSS Breakpoints</h3>
+
+
+<p class="content">When implementing CSS breakpoints, consider the following best practices:</p>
+
+
+<ul>
+	<li class="mb-2"><strong>Mobile-first approach:</strong>Start by writing styles for small devices (mobile phones), then add breakpoints for larger screens. This approach ensures that your site loads quickly on mobile devices and is more performant.</li>
+	<li class="mb-2"><strong>Avoid too many breakpoints:</strong> It can be tempting to create dozens of breakpoints, but keeping the number to a minimum helps maintain cleaner and more manageable CSS code.</li>
+	<li><strong>Test across multiple devices:</strong>Always test your designs on actual devices, as the breakpoints may not behave exactly the same across all screens. Responsive design tools in browsers like Chrome or Firefox are useful, but nothing beats testing on real hardware.</li>
+</ul>
+
+
 
 
 
@@ -371,6 +403,10 @@
 			<ul class="list-unstyled scrollspy-nav">
 				<li><a href="#core-concepts">Core concepts</a></li>
 				<li><a href="#available-breakpoints">Available breakpoints</a></li>
+				
+				<li><a href="#standard-css-breakpoints">Standard CSS breakpoints</a></li>
+				
+				<li><a href="#best-practices-for-using-css-breakpoints">Best practices for using css breakpoints</a></li>
 				</ul>
 		</div>
   
