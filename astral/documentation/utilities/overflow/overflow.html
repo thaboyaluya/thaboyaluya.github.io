@@ -139,7 +139,8 @@
 					<a  href="../../../documentation/components/modal/modals.html"  class="navbar-item"> Modal</a>
 					<a  href="../../../documentation/components/navigation/navigation.html"  class="navbar-item">Navigation</a>
                     <a  href="../../../documentation/components/notification/notifications.html"  class="navbar-item">Notification</a>
-					<a  href="../../../documentation/components/pagination/pagination.html"  class="navbar-item">Pagination</a>
+					<a  href="../../../documentation/components/pagination/pagination.html"  class="navbar-item">Pagination</a> <a  href="../../../documentation/components/sidenav/sidenav.html"  class="navbar-item">Side Nav</a>
+                              <a  href="../../../documentation/components/toast-static/toast-static.html"  class="navbar-item">Toast Message</a>
 	              
 					<a  href="../../../documentation/components/progress bar/progressbars.html"  class="navbar-item">Progress Bars</a>
 					
@@ -285,10 +286,26 @@
 <div class="docs-content">
   <h3 class="title" id="overview">
     <i class="fa fa-link text-primary mr-3" aria-hidden="true"></i>   
- Overview
+    What is Overflow in CSS?
   </h3>
+  <p class="content">The overflow property in CSS determines how to handle content that exceeds the boundary of its container. This property is especially useful when dealing with text, images, or other elements that might extend beyond their intended dimensions.</p><p class="content">Adjust the <code>overflow</code> property on the fly with four default values and classes. These classes are not responsive by default.</p>
 
-  <p class="content">Adjust the <code>overflow</code> property on the fly with four default values and classes. These classes are not responsive by default.</p>
+  <h3 class="title" id="common-overflow-css-values">
+	<i class="fa fa-link text-primary mr-3" aria-hidden="true"></i>   
+	Common Overflow CSS Values
+    </h3>
+
+<ul>
+	<li class="mb-2"><strong>overflow: visible –</strong> The default value. The content will not be clipped and will overflow outside its container.</li>
+	<li class="mb-2"><strong>overflow: hidden –</strong> The content is clipped and hidden from view, with no scrollbars provided..</li>
+	<li class="mb-2"><strong>overflow: scroll –</strong> Scrollbars are added, allowing the user to scroll to see the overflowing content..</li>
+	<li class="mb-2"><strong>overflow: auto –</strong> Adds scrollbars only when content overflows.</li>
+	<li ><strong>overflow: clip –</strong> Clips the content to the container size without providing any scrolling mechanism.</li>
+</ul>
+
+
+
+
 
 
 
@@ -343,6 +360,7 @@
         <strong class="d-block  my-2 pb-2">On this page</strong>
   <ul class="list-unstyled scrollspy-nav">
   <li><a href="#overview">Overview</a></li>
+  <li><a href="#common-overflow-css-values">Common Overflow CSS Values</a></li>
   </ul>
         </div>
      </div>

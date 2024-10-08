@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <title>Astral.CSS - Colors </title>
+      <title>Astral.CSS - Sidenav </title>
       <meta charset="utf-8">
       <meta name="robots" content="index, follow">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="description" content="The colors used to style most Astral.CSS elements and components have been carefully selected through extensive research and analysis, ensuring an appealing and cohesive design.">
+      <meta name="description" content="Discover how side navigation (sidenav) enhances user experience by streamlining content exploration and page navigation. Learn best practices for UI/UX design and SEO optimization.">
       <meta name="author" content="Rume Aluya"><meta name="keywords" content="CSS Framework,Responsive Design,Web devlopment,Front-End Framework,UI Components,Grid System,CSS Library,Web design tool,Modern CSS Framework,Customizable Framework">   <meta property="og:image" content="./Screenshot (1).png">
     <meta name="twitter:image" content="./Screenshot (1).png">
       
       <meta property="og:title" content="Astral.CSS ">
-      <meta property="og:description" content="The colors used to style most Astral.CSS elements and components have been carefully selected through extensive research and analysis, ensuring an appealing and cohesive design.">
-      <meta name="twitter:card" content="The colors used to style most Astral.CSS elements and components have been carefully selected through extensive research and analysis, ensuring an appealing and cohesive design.">
+      <meta property="og:description" content="Discover how side navigation (sidenav) enhances user experience by streamlining content exploration and page navigation. Learn best practices for UI/UX design and SEO optimization.">
+      <meta name="twitter:card" content="Discover how side navigation (sidenav) enhances user experience by streamlining content exploration and page navigation. Learn best practices for UI/UX design and SEO optimization.">
       <meta name="twitter:site" content="@AstralCSS"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4546170068588185"
      crossorigin="anonymous"></script>
       <meta name="twitter:creator" content="@thaboyaluya">
@@ -23,9 +23,9 @@
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#00304a">
       <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon_package_v0.16/favicon-16x16.png">
-      <link rel="stylesheet" href="../../../../css/github.css">
+	<link rel="stylesheet" href="../../../../css/github.css">
       <link rel="stylesheet" href="../../../../css/doc.css">
-        <link rel="stylesheet" href="../../../../css/font-awesome.min.css">
+      <link rel="stylesheet" href="../../../../css/font-awesome.min.css">
     
 </head>
 <body>
@@ -242,6 +242,10 @@
                   </ul>
             </div>
 </ul>
+
+
+
+
 <main>
 	<div id="close-trigger-sidenav" data-target=".sidenav"></div>
 	<nav  class="navbar navbar-dark bg-primary  d-none-tab-up">
@@ -274,46 +278,67 @@
 	    
 	</nav>
   <div class="section">
-  
-          <h1 class="header">Colors</h1>
-          <h4 class="text-weight-light fs-4">The colors that style most Astral elements and components</h4>
+    
+          <h1 class="header">Sidenav</h1>
+          <h4 class="fs-4 text-weight-light"><p>Side navigation (Sidenav)  a commonly used UI/UX <br> design element that allows users to explore content and navigate between pages.</p></h4>
   
   </div>
+
 
     <div class="columns">
   <div class="column col-sm-12 col-md-12 col-lg-10 col-10">
-
     <div class="docs-content">
+	<h3 class="content" id="sidenav">
+		<i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>  
+		Sidenav
+	    </h3>
 
-      <h3 class="title" id="text-colors">
-        <i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>   
-        Text colors
-      </h3>
-      <p class="content">To apply a text color, just append <code>text-*</code> to the color class like this: <code>text-primary</code>
-      
-      </p>
+<p class="content">A sidenav, or side navigation bar, is a vertical navigation menu typically positioned on the left or right side of a webpage. Sidenavs contain links to different sections or pages of a website, making it easy for users to browse and discover content. The sidenav remains fixed or collapsible as the user scrolls through the page, allowing for easy access to key pages or actions without navigating away from the current content.</p>
+
+
+<p class="content">Types of Sidenavs:</p>
+
+<ol>
+      <li class="mb-2"><strong>Fixed Sidenav:</strong> Stays visible at all times on the screen, even when the user scrolls.</li>
+      <li class="mb-2"><strong>Collapsible Sidenav:</strong> Appears only when triggered by the user, such as by clicking a menu icon.</li>
+      <li class="mb-2"><strong>Expandable Sidenav:</strong> Expands to reveal sub-menu items when clicked, allowing for hierarchical navigation.</li>
+      <li class="mb-2"><strong>Responsive Sidenav:</strong> Adapts to different screen sizes (desktop, tablet, mobile) for optimized usability.</li>
+</ol>
+
+<div class="panel">
+      <nav class="sidemenu border" style="max-width: 360px;">
+            <a class="sidemenu-item" href="#url">
+              Account
+            </a>
+            <a class="sidemenu-item" href="#url" aria-current="page">
+              Profile
+            </a>
+            <a class="sidemenu-item" href="#url">
+              Emails
+            </a>
+            <a class="sidemenu-item" href="#url">
+              Notifications
+            </a>
+          </nav>
+</div>
   
-     
-  <div class="panel ">
-    <p class="text-primary"><strong>primary </strong>color</p>
-    <p class="text-secondary"><strong>secondary </strong>color</p>
-    <p class="text-dark"><strong>dark</strong>color</p>
-    <p class="text-light bg-primary"><strong>light </strong>color</p>
-    <p class="text-success"> <strong>success </strong>color</p>
-    <p class="text-info"><strong>info </strong>color</p>
-    <p class="text-warning"><strong>warning </strong>color</p>
-    <p class="text-error"> <strong>error </strong> color</p>
-  </div>
 
-
-<pre class="user-select-all"><code data-language="html">&lt;p class="text-primary"&gt;&lt;/p>
-&lt;p class="text-secondary"&gt;&lt;/p>
-&lt;p class="text-dark"&gt;&lt;/p>
-&lt;p class="text-light"&gt;&lt;/p>
-&lt;p class="text-success"&gt;&lt;/p>
-&lt;p class="text-info"&gt;&lt;/p>
-&lt;p class="text-warning"&gt;&lt;/p>
-&lt;p class="text-error"&gt;&lt;/p>
+<pre class="user-select-all">
+<code data-language="html">
+<nav class="sidemenu border" style="max-width: 360px;">
+  <a class="sidemenu-item" href="#url">
+Account
+</a>
+  <a class="sidemenu-item" href="#url" aria-current="page">
+Profile
+</a>
+  <a class="sidemenu-item" href="#url">
+Emails
+  </a>
+  <a class="sidemenu-item" href="#url">
+Notifications
+  </a>
+</nav>
 </code></pre>
 
 
@@ -325,104 +350,36 @@
 
 
 
+ 
 
-  <div class="alert info block">
-    <div class="alert-body">
-  Note our color classes are the text in bold above 👆🏼 .For example <code>text-<strong>primary</strong></code>
-    </div>
-  </div>
-
-
-
-
-  <h3 class="title" id="other-text-colors">
-	<i class="fa fa-link text-primary mr-1" aria-hidden="true"></i>   
-Other Text colors
-    </h3>
-    <div style="font-weight: 500;" class="panel">
-	<p class="text-red-100">text-red-100</p>
-	<p class="text-red-200">text-red-200</p>
-	<p class="text-red-300">text-red-300</p>
-	<p class="text-red-400">text-red-400</p>
-	<p class="text-red-500">text-red-500</p>
-	<p class="text-pink-100">text-pink-100</p>
-	<p class="text-pink-200">text-pink-200</p>
-	<p class="text-pink-300">text-pink-300</p>
-	<p class="text-pink-400">text-pink-400</p>
-	<p class="text-pink-500">text-pink-500</p>
-	<p class="text-orange-100">text-orange-100</p>
-	<p class="text-orange-200">text-orange-200</p>
-	<p class="text-orange-300">text-orange-300</p>
-	<p class="text-orange-400">text-orange-400</p>
-	<p class="text-orange-500">text-orange-500</p>
-	<p class="text-yellow-100">text-yellow-100</p>
-	<p class="text-yellow-200">text-yellow-200</p>
-	<p class="text-yellow-300">text-yellow-300</p>
-	<p class="text-yellow-400">text-yellow-400</p>
-	<p class="text-yellow-500">text-yellow-500</p>
-	<p class="text-purple-100">text-purple-100</p>
-	<p class="text-purple-200">text-purple-200</p>
-	<p class="text-purple-300">text-purple-300</p>
-	<p class="text-purple-400">text-purple-400</p>
-	<p class="text-purple-500">text-purple-500</p>
-	<p class="text-indigo-100">text-indigo-100</p>
-	<p class="text-indigo-200">text-indigo-200</p>
-	<p class="text-indigo-300">text-indigo-300</p>
-	<p class="text-indigo-400">text-indigo-400</p>
-	<p class="text-indigo-500">text-indigo-500</p>
-	<p class="text-green-100">text-green-100</p>
-	<p class="text-green-200">text-green-200</p>
-	<p class="text-green-300">text-green-300</p>
-	<p class="text-green-400">text-green-400</p>
-	<p class="text-green-500">text-green-500</p>
-	<p class="text-blue-100">text-blue-100</p>
-	<p class="text-blue-200">text-blue-200</p>
-	<p class="text-blue-300">text-blue-300</p>
-	<p class="text-blue-400">text-blue-400</p>
-	<p class="text-blue-500">text-blue-500</p>
-	<p class="text-light-blue-100">text-light-blue-100</p>
-	<p class="text-light-blue-200">text-light-blue-200</p>
-	<p class="text-light-blue-300">text-light-blue-300</p>
-	<p class="text-light-blue-400">text-light-blue-400</p>
-	<p class="text-light-blue-500">text-light-blue-500</p>
-	<p class="text-brown-100">text-brown-100</p>
-	<p class="text-brown-200">text-brown-200</p>
-	<p class="text-brown-300">text-brown-300</p>
-	<p class="text-brown-400">text-brown-400</p>
-	<p class="text-brown-500">text-brown-500</p>
-	<p class="text-gray-100">text-gray-100</p>
-	<p class="text-gray-200">text-gray-200</p>
-	<p class="text-gray-300">text-gray-300</p>
-	<p class="text-gray-400">text-gray-400</p>
-	<p class="text-gray-500">text-gray-500</p>
-	<p class="text-gray-600">text-gray-600</p>
-	<p class="text-gray-700">text-gray-700</p>
-	<p class="text-gray-800">text-gray-800</p>
-    </div>
-
-
-
-
-
-
-  
-  
-   
 
     </div>
   </div>
-
-
-
    <div class="column toc col-2">
     <div class="bd-toc">
-      <strong class="d-block  my-2 pb-2">On this page</strong>
-      <ul class="list-unstyled scrollspy-nav">
-      <li><a href="#text-colors">Text Colors</a></li>
-	<li><a href="#other-text-colors">Other Text Colors</a></li>
-			</ul>
+      <strong class="d-block my-2 pb-2 ">On this page</strong>
+        <ul class="list-unstyled scrollspy-nav">
+          <li><a href="#sidenav">Side Nav</a></li>
+          </ul>
       </div>
+   </div>
+
+  
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer class="footer text-weight-light  pt-5">
 	   <div class="container">
                     <div class="columns">
@@ -459,8 +416,6 @@ Other Text colors
 	</div>
   </footer>
 </main>
-
-
 
 <script src="../../../../js/astral.js"></script>
 <script src="../../../../js/rainbow.min.js"></script>
