@@ -1,15 +1,28 @@
-# Welcome to Astral.CSS V 2.3.1!
+<p align="center">
+  <a href="https://thaboyaluya.github.io" target="_blank">
+    <picture>
+      <img alt="Astral.CSS" src="./favicon_package_v0.16/android-chrome-512x512.png" width="350" height="70" style="max-width: 100%;">
+    </picture>
+  </a>
+</p>
+
+---
+
+<h3 align="center">Astral.CSS</h3>
+
+<p align="center">
+  A free CSS framework that offers a collection of ready-to-use frontend components, allowing you to effortlessly combine them to create responsive web interfaces.
+</p>
 
 Hi! Welcome to **Astral.CSS!** Astral.CSS is a free CSS framework that offers a collection of ready-to-use frontend components, allowing you to effortlessly combine them to create responsive web interfaces.
 
 > **NOTE**: Astral.CSS also support dark mode and light mode which is very cool.
 
-## In a nutshell
 
-- [Components](#current-components)
-- [Usage](#usage)
-- [Documentation](https://thaboyaluya.github.io/)
-- [About the creator](#about-the-creator)
+## Documentation
+
+For full documentation, visit [https://thaboyaluya.github.io](https://thaboyaluya.github.io).
+
 
 ## Who We Are
 
@@ -70,11 +83,6 @@ Astral currently includes:
 Yeah... That's all. But no worries! I'm working on adding new components every day!
 
 
-
-# Docs
-
-Find all the documentation, examples, and list of components and how to use them
-at https://thaboyaluya.github.io/.
 
 ## License
 
