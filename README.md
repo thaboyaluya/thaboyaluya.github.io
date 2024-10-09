@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://thaboyaluya.github.io" target="_blank">
     <picture>
-      <img alt="Astral.CSS" src="./favicon_package_v0.16/android-chrome-512x512.png" width="350" height="70" style="max-width: 100%;">
+      <img alt="Astral.CSS" src="./favicon_package_v0.16/android-chrome-512x512.png">
     </picture>
   </a>
 </p>
