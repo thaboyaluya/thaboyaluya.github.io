@@ -5385,14 +5385,14 @@ display: block;
 .offcanvas-left {
 top: 0;
 left: 0;
-width: 400px;
+width: 60vw;
 border-right: 1px solid var(--as-border);
 transform: translateX(-100%);
 }
 .offcanvas-right {
 top: 0;
 right: 0;
-width: 400px;
+width: 60vw;
 border-left: 1px solid var(--as-border);
 transform: translateX(100%);
 }
@@ -21593,20 +21593,8 @@ display: none;
 display: block; 
 }
 
-.offcanvas-left {
-top: 0;
-left: 0;
-width: 400px;
-border-right: 1px solid var(--as-border);
-transform: translateX(-100%);
-}
-.offcanvas-right {
-top: 0;
-right: 0;
-width: 400px;
-border-left: 1px solid var(--as-border);
-transform: translateX(100%);
-}
+
+
 
 .offcanvas-bottom {
 right: 0;
