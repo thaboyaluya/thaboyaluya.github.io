@@ -207,7 +207,6 @@
           <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="600" style="background-color: #0a0a0a;" class="p-6 text-center aos-init aos-animate mt-40">
             <h2 class=" text-light headline">Astral.CSS Dark Mode</h2>
          <h3 class="mb-5 text-gray-700  md:text-lg mt-3 fs-6  md:text-lg">Effortlessly adapt between dark and light themes based on the user’s preference, ensuring a browsing experience tailored to your needs.</h3>
-         <div class="container">
           <div style="background: white !important;" class="panel">
             <div class="d-grid gap-2 grid-cols-1-sm grid-cols-1-md grid-cols-2-lg ">
         <div class="astral-dark dark-theme">
@@ -284,7 +283,7 @@
             </div>
       </div>
 
-         </div>
+    
 
     <a class="button button-large dark-theme button-outline-primary  " href="./astral.css/documentation/dark mode/theme/dark-mode.html"><span class="mr-2">Read Docs</span> <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></a>
 
@@ -297,54 +296,38 @@
             <h2 class=" headline">So easy to customize</h2>
             <h3 class="mb-5 text-gray-700 fs-6 md:text-lg mt-3  md:text-lg">Simply set your own CSS variables or override the default values.</h3>
 
-<div class="columns g-2 align-items-center justify-content-center">
-  <div class="text-is-left col-sm-12 col-md-6">
-    <pre class="user-select-all rounded-2"><code data-language="css">// Set your own colors or override the default values
-      .red-theme{
-        --as-bg-card: #4c0014;
-        --as-bd-card: #4c0014;
-        --as-button-text: #660018;
-        --as-text-color: hsl(3, 100%, 90%);
-        --as-button-bg: hsl(3, 100%, 90%);
-        --as-border: hsl(3, 100%, 90%);
-        --as-button-hover-bg:hsla(4, 100%, 90%, 0.89);
-        --as-button-active-bg:hsla(4, 100%, 90%, 0.966);
-        --as-button-active-border:hsla(4, 100%, 90%, 0.966);
-        --as-box-shadow: 0 8px 24px rgba(102, 0, 24, 0.2);
-        --mode-bg:rgb(255, 235, 233);
-        --mode-color:#4c0014;
-        --bgColor-neutral-muted:rgba(255, 216, 212, 0.5);
-        --overlay-bgColor:rgba(128, 83, 77, 0.644);
-  }</code>
+<div class="d-flex flex-sm-column g-2 align-items-center justify-content-center">
+  <div class="text-is-left col-sm-12  ">
+<pre class="user-select-all rounded-2"><code data-language="css">// Set your own colors or override the default values
+.red-theme{
+--as-bg-card: #4c0014;
+--as-bd-card: #4c0014;
+--as-button-text: #660018;
+--as-text-color: hsl(3, 100%, 90%);
+--as-button-bg: hsl(3, 100%, 90%);
+--as-border: hsl(3, 100%, 90%);
+--as-button-hover-bg:hsla(4, 100%, 90%, 0.89);
+--as-button-active-bg:hsla(4, 100%, 90%, 0.966);
+--as-button-active-border:hsla(4, 100%, 90%, 0.966);
+--as-box-shadow: 0 8px 24px rgba(102, 0, 24, 0.2);
+--mode-bg:rgb(255, 235, 233);
+--mode-color:#4c0014;
+}</code>
   </pre>
 </div>
 
-  <div class="panel col-sm-12 col-md-6">
+  <div class="panel ">
     <p class="text-is-left">Before</p>
     <div class="card text-is-left ">
       <div class="card-body">Empower every person and every organization on the planet to achieve more.</div>
         <div class="card-footer">
        
-    <details class="details-reset details-overlay">
-      <summary class="button" aria-haspopup="true">
-        Dropdown
-      </summary>
-      <div class="SelectMenu">
-        <div class="SelectMenu-modal">
-          <div class="SelectMenu-list">
-            <button class="SelectMenu-item" role="menuitem">
-              Item 1
-            </button>
-            <button class="SelectMenu-item" role="menuitem">
-              Item 2
-            </button>
-            <button class="SelectMenu-item" role="menuitem">
-              Item 3
-            </button>
-          </div>
-        </div>
-      </div>
-    </details>
+  
+      <button class="button" aria-haspopup="true">
+      Default Button
+      </button>
+
+
   
         </div>
       </div>
@@ -353,26 +336,12 @@
       <div class="card-body">Empower every person and every organization on the planet to achieve more.</div>
         <div class="card-footer">
        
-    <details class="details-reset details-overlay">
-      <summary class="button" aria-haspopup="true">
-        Dropdown
-      </summary>
-      <div class="SelectMenu">
-        <div class="SelectMenu-modal">
-          <div class="SelectMenu-list">
-            <button class="SelectMenu-item" role="menuitem">
-              Item 1
-            </button>
-            <button class="SelectMenu-item" role="menuitem">
-              Item 2
-            </button>
-            <button class="SelectMenu-item" role="menuitem">
-              Item 3
-            </button>
-          </div>
-        </div>
-      </div>
-    </details>
+ 
+      <button class="button" aria-haspopup="true">
+        Custom Button
+      </button>
+  
+
   
         </div>
       </div>
@@ -490,7 +459,7 @@
           <div class="border-top mt-20">
             <footer><div class="flex flex-col md:flex-row gap-3 items-center justify-between py-10 max-w-screen-lg mx-auto text-sm px-5 text-gray-700">
             <p>© 2024 <a href="https://github.com/thaboyaluya/astral.css-V3.0/archive/refs/heads/master.zip" target="_blank" rel="noopener">Astral.CSS</a>. All rights reserved</p>
-            <nav class="flex gap-5">
+            <nav class="flex flex-sm-column align-items-center justify-content-center gap-5">
               <a class="footer-link" href="./astral.css/documentation/get-started/introduction/get-started.html">Introduction</a>
               <a class="footer-link" href="./astral.css/documentation/get-started/download/download.html">Download</a>
               <a class="footer-link" href="./astral.css/documentation/utilities/typography/typography.html">Typography</a>

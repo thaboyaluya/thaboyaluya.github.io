@@ -499,7 +499,8 @@
 
 
 
-    <input id="textarea_color">
+
+    <p id="textarea_color"></p>
 
 
     <div class="copy_correct">
@@ -556,9 +557,6 @@
 	</div>
   </footer>
 
-
-
-
 </main>
 <script type="text/javascript">
 	var color_base = document.querySelectorAll(".color_base");
@@ -569,7 +567,7 @@
 	    console.log(color_actual);
 	    document.getElementById("textarea_color").value = "";
 	    document.getElementById("textarea_color").value = color_actual;
-	    document.querySelector("#textarea_color").select();
+	    // document.querySelector("#textarea_color").select();
 	    document.execCommand("copy");
 	    document.querySelector("#color_talk").classList.add(color_actual);
 	    document.querySelector("#color_talk").textContent = color_actual;
