@@ -1,0 +1,37 @@
+@font-face {
+      font-family: 'Inter';
+      src: url('../fonts/ReadexPro-VariableFont_HEXP\,wght.ttf');
+      font-style: normal;
+    }
+
+body{
+      padding: 0;
+      margin: 0;
+      color: var(--mode-color);
+    background-color: var(--mode-bg);
+    font-family: 'Inter';
+}
+
+.headline {
+  font-size: 3.125rem;
+  font-size: min(4.375rem, max(8vw, 2.5rem));
+  font-weight: 700;
+  -webkit-font-feature-settings: initial;
+  -moz-font-feature-settings: initial;
+  font-feature-settings: initial;
+  letter-spacing: -.12rem;
+  margin-left: -.2rem;
+  margin-top: 3.4rem;
+  line-height: 1.1;
+  background-image: -webkit-linear-gradient(304deg, var(--shade), #757a7d);
+  background-image: -moz-linear-gradient(304deg, var(--shade), #757a7d);
+  background-image: -o-linear-gradient(304deg, var(--shade), #757a7d);
+  background-image: linear-gradient(146deg, var(--shade), #757a7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -.025em;
+}
+.font-light{
+  font-weight: 300;
+}
