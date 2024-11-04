@@ -324,7 +324,7 @@ Tooltip
 
   <p class="content font-light">Tooltips provide context information labels that appear on hover and focus.When using icons for actions you can use a tooltip to give people clarification on its function.Astral Tooltips component is built entirely in CSS.</p>
 
-  <p class="content font-light">Add the <code>tooltip</code> class and the <code>data-tooltip</code> attribute, which contains the tooltip content, to non self closing elements.</p>
+  <p class="content font-light">Add the <code>tooltip</code> class and the <code>data-content</code> attribute, which contains the tooltip content, to non self closing elements.</p>
   <p class="content font-light">And add the <code>tooltipped-nw</code>, <code>tooltipped-n</code>,<code>tooltipped-ne</code>,<code>tooltipped-w</code>, <code>tooltipped-e</code>,<code>tooltipped-sw</code>,<code>tooltipped-s</code>and<code>tooltipped-se</code>  class to define the position of a tooltip.
   </p>
 
@@ -375,13 +375,25 @@ Tooltip
 
 
   <pre class="user-select-all">
-<code data-language="html"><button class="button button-primary tooltip tooltip-bottom" data-tooltip="Bottom Tooltip Text">bottom tooltip</button>
-
-<button class="button button-primary tooltip" data-tooltip="Top Tooltip Text">top tooltip</button>
-
-<button class="button button-primary tooltip tooltip-left" data-tooltip="Left Tooltip Text">left tooltip</button>
-
-<button class="button button-primary tooltip tooltip-right" data-tooltip="Right Tooltip Text">right tooltip</button>
+<code data-language="html">
+  <button type="button" class="tooltipped button tooltipped-nw m-2 p-2 border" data-content="This is the tooltip on the North West side.">
+    .tooltipped-nw
+  </button>
+  <button type="button" class="tooltipped button tooltipped-n m-2 p-2 border" data-content="This is the tooltip on the North side.">
+    .tooltipped-n
+  </button>
+  <button type="button" class="tooltipped button tooltipped-ne m-2 p-2 border" data-content="This is the tooltip on the North East side.">
+    .tooltipped-ne
+  </button>
+  <button type="button" class="tooltipped button tooltipped-sw m-2 p-2 border" data-content="This is the tooltip on the South West side.">
+    .tooltipped-sw
+  </button>
+  <button type="button" class="tooltipped button tooltipped-s m-2 p-2 border" data-content="This is the tooltip on the South side.">
+    .tooltipped-s
+  </button>
+  <button type="button" class="tooltipped button tooltipped-se m-2 p-2 border" data-content="This is the tooltip on the South East side.">
+    .tooltipped-se
+  </button>
 </code></pre>
 
 
