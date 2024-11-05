@@ -19,20 +19,65 @@
 > **NOTE**: Astral.CSS also support dark mode and light mode which is very cool.
 
 
+## Installation with npm
+
+Install Astral.CSS with npm
+
+```bash
+  npm install astral.css
+  cd my-project
+```
+
+## CDN via jsDelivr
+
+If you do not want to download Astral.CSS you can skip the download with jsDelivr to deliver cached version of Astral.CSS's compiled CSS and JS to your project.
+
+```bash
+<link href="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/css/astral.css-v3.0.min.css" rel="stylesheet" >
+<script> src="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/js/astral-v3.0.min.js" ></script>
+```
+
+
+## Starter Template
+```bash
+<!-- <!doctype html>  -->
+<html lang="en">
+      <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content ="width=device-width, initial-scale=1">
+      
+      <!-- Astral.CSS -->
+      <link href="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/css/astral.css-v3.0.min.css" rel="stylesheet" >
+                  
+      <title>Hello, world!</title>
+      </head>
+      <body>
+      
+      <h1>Hello, world!</h1>
+                  
+                  
+      <script> src="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/js/astral-v3.0.min.js" ></script>
+                  
+
+      </body>
+</html>
+            
+
+```
+
+
 ## Documentation
 
 For full documentation, visit [https://thaboyaluya.github.io](https://thaboyaluya.github.io).
 
 
-## Who We Are
-
-At Astral,we believe that web devlopment should be an enjoyable and stramlined experience for developers of all skill levels.Our  framework was crafted for developers providing a collection of ready-to-use frontend components that simplify the creation of responsive web interfaces.Whether you are building a personal project or a commercial application,we aim to empower your creativity and productivity.
 
 
 
 ## Features
 
-- Extensive Components Library : Astral offers a rich library of UI component, allowing developers to streamline their workflow and create beautiful designs without starting from scratch.
+- Extensive Components Library : Astral.CSS offers a rich library of UI component, allowing developers to streamline their workflow and create beautiful designs without starting from scratch.
 
 - Fully Responsive Design : With mobile-first principle,our framework ensures that all components look great on any device whether it's a desktop,tablet or mobile phone.
 
