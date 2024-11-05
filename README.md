@@ -89,11 +89,11 @@ For full documentation, visit [https://thaboyaluya.github.io](https://thaboyaluy
 
 ## How It Works
 
-- Download the Framework : Get started by downloading the Astral framework from our GitHub respository .Access all our components at your fingertips.
+- Download the Framework : Get started by downloading the Astral.CSS framework from our GitHub respository .Access all our components at your fingertips.
 
 - Explore the Component Library : Browse through our extensive library of frontend components.Whether your need forms,cards,navigation bars,modals and much more .We've you covered !
 
-- Customize and Combine : Easily customize components to fit your project's needs.With Astral,you can build unique web interfaces that stand out
+- Customize and Combine : Easily customize components to fit your project's needs.With Astral.CSS,you can build unique web interfaces that stand out
 
 
 
