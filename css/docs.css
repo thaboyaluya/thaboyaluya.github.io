@@ -22695,10 +22695,7 @@ margin: .25rem;
 }
 
 
-canvas, img, svg, video {
-max-width: 100%;
-height: auto;
-}
+
 
 .position-center{
 top: calc(50% - 0px);
