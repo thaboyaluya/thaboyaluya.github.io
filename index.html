@@ -104,6 +104,59 @@
   
  
 
+
+
+
+
+
+
+
+
+
+      <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="600" class=" section aos-init aos-animate">
+        <div class="columns align-items-center">
+          <div class="col-sm-12 col-md-5">
+            <h2 class=" headline">Installation</h2>
+            <p class="py-4  text-gray-700 font-light fs-6">
+              Install Astral.CSS’s source CSS and JavaScript files via npm.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-7">
+<pre class="user-select-all"><code data-language="html"> npm i astral.css</code></pre>
+    
+          </div>
+        </div>
+          </div>
+
+
+
+          <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="600" class=" section aos-init aos-animate">
+            <div class="columns align-items-center">
+              <div class="col-sm-12 col-md-5">
+                <h2 class=" headline">jsDelivr</h2>
+                <p class="py-4  text-gray-700 font-light fs-6">
+                  When you only need to include Astral.CSS’s compiled CSS or JS, you can use <a href="https://www.jsdelivr.com/">jsDelivr</a>.
+                </p>
+                <p class="py-4  text-gray-700 font-light fs-6">
+                  See it in action with our simple <a class="text-gray-400" href="./astral.css template/starter-template/index.html">starter template</a> to jumpstart your next project.
+                </p>
+              </div>
+              <div class="col-sm-12 col-md-7">
+<pre class="user-select-all"><code data-language="html">&lt;link href="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/css/astral.css-v3.0.min.css" rel="stylesheet"&gt;</code></pre>
+
+<pre class="user-select-all"><code data-language="html">&lt;script src="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/js/astral-v3.0.min.js"&gt; &lt;/script &gt; </code></pre>
+        
+              </div>
+            </div>
+              </div>
+
+
+
+
+
+
+
+
       <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="600" class="text-center section aos-init aos-animate">
         <h2 class=" headline">Get started any way you want</h2>
       
@@ -477,9 +530,106 @@
 
 
       
-      
-      <iframe class="z-100" src="https://app.vectorshift.ai/chatbots/embedded/672b74326395b3ca7081ef2a?openChatbot=false" width="500px" height="600px" style="border: none; position: fixed; bottom: 0; right: 0; margin: 10px;" allow="clipboard-read; clipboard-write; microphone"/>
-<script src="./js/docs.min.js"></script>
+      <script>
+         // THEMES
+     const STORAGE_KEY = "astral.css-theme";
+     const SYSTEM_THEME = "system";
+     const DEFAULT_THEME = "light";
+   
+     const state = {
+       chosenTheme: SYSTEM_THEME, // light|dark|system
+       appliedTheme: DEFAULT_THEME, // light|dark
+       OSTheme: null, // light|dark|null
+     };
+   
+     const $themeCycle = document.getElementById("js-cycle");
+     const $themeSwitchers = document.querySelectorAll(".js-themes button");
+   
+     const updateThemeUI = () => {
+   
+       $themeSwitchers.forEach((el) => {
+         const swatchTheme = el.dataset.scheme;
+   
+         if (state.chosenTheme === swatchTheme) {
+           el.classList.add("is-active");
+         } else {
+           el.classList.remove("is-active");
+         }
+       });
+     };
+   
+     const setTheme = (theme, save = true) => {
+       state.chosenTheme = theme;
+       state.appliedTheme = theme;
+   
+       if (theme === SYSTEM_THEME) {
+         state.appliedTheme = state.OSTheme;
+         document.documentElement.removeAttribute("data-theme");
+         window.localStorage.removeItem(STORAGE_KEY);
+       } else {
+         document.documentElement.setAttribute("data-theme", theme);
+   
+         if (save) {
+           window.localStorage.setItem(STORAGE_KEY, theme);
+         }
+       }
+   
+       updateThemeUI();
+     };
+   
+     const toggleTheme = () => {
+       if (state.appliedTheme === "light") {
+         setTheme("dark");
+       } else {
+         setTheme("light");
+       }
+     };
+   
+     const detectOSTheme = () => {
+       if (!window.matchMedia) {
+         // matchMedia method not supported
+         return DEFAULT_THEME;
+       }
+   
+       if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+         // OS theme setting detected as dark
+         return "dark";
+       } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+         return "light";
+       }
+   
+       return DEFAULT_THEME;
+     };
+   
+     // On load, check if any preference was saved
+     const localTheme = window.localStorage.getItem(STORAGE_KEY);
+     state.OSTheme = detectOSTheme();
+   
+     if (localTheme) {
+       setTheme(localTheme, false);
+     } else {
+       setTheme(SYSTEM_THEME);
+     }
+   
+     // Event listeners
+     $themeSwitchers.forEach((el) => {
+       el.addEventListener("click", () => {
+         const theme = el.dataset.scheme;
+         setTheme(theme);
+       });
+     });
+   
+   
+     window
+       .matchMedia("(prefers-color-scheme: dark)")
+       .addEventListener("change", (event) => {
+         const theme = event.matches ? "dark" : "light";
+         state.OSTheme = theme;
+         setTheme(theme);
+       });
+      </script>
+
+
 <script src="./js/aos.js"></script>
 <script>AOS.init()</script>
 <script src="./js/rainbow.min.js"></script>
