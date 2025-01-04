@@ -173,7 +173,7 @@ const Toastify = function() {
     }
 }();
 !function(D) {
-    console.log("\uD83D\uDC4B Aira.js has been initialised... \uD83D\uDC4B");
+    console.log("\uD83D\uDC4B Astral.js has been initialised... \uD83D\uDC4B");
     let u = {
         open: ".a-menu",
         close: "#close-trigger",
