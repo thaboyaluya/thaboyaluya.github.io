@@ -1,14 +1,14 @@
 <p align="center">
   <a href="https://thaboyaluya.github.io" target="_blank">
     <picture>
-      <img alt="AiraCSS" src="https://cdn.jsdelivr.net/gh/thaboyaluya/thaboyaluya.github.io@master/favicon_package_v0.16/android-chrome-192x192.png">
+      <img alt="Astral.CSS" src="https://cdn.jsdelivr.net/gh/thaboyaluya/thaboyaluya.github.io@master/favicon_package_v0.16/android-chrome-192x192.png">
     </picture>
   </a>
 </p>
 
 ---
 
-<h3 align="center">AiraCSS</h3>
+<h3 align="center">Astral.CSS</h3>
 
 <p align="center">
   A free CSS framework that offers a collection of ready-to-use frontend components, allowing you to effortlessly combine them to create responsive web interfaces.
@@ -16,21 +16,21 @@
 
 
 
-> **NOTE**: AiraCSS also support dark mode and light mode which is very cool.
+> **NOTE**: Astral.CSS also support dark mode and light mode which is very cool.
 
 
 ## Installation with npm
 
-Install AiraCSS with npm
+Install Astral.CSS with npm
 
 ```bash
-  npm install airacss
+  npm install Astral.CSS
   cd my-project
 ```
 
 ## CDN via jsDelivr
 
-If you do not want to download AiraCSS you can skip the download with jsDelivr to deliver cached version of AiraCSS's compiled CSS and JS to your project.
+If you do not want to download Astral.CSS you can skip the download with jsDelivr to deliver cached version of Astral.CSS's compiled CSS and JS to your project.
 
 ```bash
 <link href="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/css/astral.css-v3.0.min.css" rel="stylesheet" >
@@ -47,7 +47,7 @@ If you do not want to download AiraCSS you can skip the download with jsDelivr t
       <meta charset="utf-8">
       <meta name="viewport" content ="width=device-width, initial-scale=1">
       
-      <!-- AiraCSS -->
+      <!-- Astral.CSS -->
       <link href="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/css/astral.css-v3.0.min.css" rel="stylesheet" >
                   
       <title>Hello, world!</title>
@@ -77,7 +77,7 @@ For full documentation, visit [https://thaboyaluya.github.io](https://thaboyaluy
 
 ## Features
 
-- Extensive Components Library : AiraCSS offers a rich library of UI component, allowing developers to streamline their workflow and create beautiful designs without starting from scratch.
+- Extensive Components Library : Astral.CSS offers a rich library of UI component, allowing developers to streamline their workflow and create beautiful designs without starting from scratch.
 
 - Fully Responsive Design : With mobile-first principle,our framework ensures that all components look great on any device whether it's a desktop,tablet or mobile phone.
 
@@ -89,11 +89,11 @@ For full documentation, visit [https://thaboyaluya.github.io](https://thaboyaluy
 
 ## How It Works
 
-- Download the Framework : Get started by downloading the AiraCSS framework from our GitHub respository .Access all our components at your fingertips.
+- Download the Framework : Get started by downloading the Astral.CSS framework from our GitHub respository .Access all our components at your fingertips.
 
 - Explore the Component Library : Browse through our extensive library of frontend components.Whether your need forms,cards,navigation bars,modals and much more .We've you covered !
 
-- Customize and Combine : Easily customize components to fit your project's needs.With AiraCSS,you can build unique web interfaces that stand out
+- Customize and Combine : Easily customize components to fit your project's needs.With Astral.CSS,you can build unique web interfaces that stand out
 
 
 
@@ -131,7 +131,7 @@ Yeah... That's all. But no worries! I'm working on adding new components every d
 
 ## License
 
-Astral is free to use under the [open-source MIT license](https://github.com/thaboyaluya/AiraCSS-2.3.4/blob/master/LICENSE).
+Astral is free to use under the [open-source MIT license](https://github.com/thaboyaluya/Astral.CSS-2.3.4/blob/master/LICENSE).
 
 ## About the creator
 

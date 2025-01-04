@@ -490,7 +490,7 @@ toast_close[i].parentElement.parentElement.remove()
 
 
      // THEMES
-     const STORAGE_KEY = "airacss-theme";
+     const STORAGE_KEY = "Astral.CSS-theme";
      const SYSTEM_THEME = "system";
      const DEFAULT_THEME = "light";
    
