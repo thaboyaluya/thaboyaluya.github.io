@@ -330,53 +330,54 @@
 
 				    
 <p class="cotent">
-	An input group refers to a set of form elements, such as text fields, dropdowns, buttons, or icons, that are visually grouped together. They are particularly useful in situations where you need to provide users with additional context or options, such as entering an email address, selecting a country code for a phone number, or appending units to a numeric input.
+  CSS input groups are a great way to create cohesive, easy-to-use form elements by grouping inputs, buttons, dropdowns, and more. With Astral.CSS, you can easily extend your form inputs by adding extra elements like text, buttons, or button groups—either inside or around your input fields. This design pattern provides extra context or options, like appending a unit to a number or adding a dropdown for selecting country codes.
 </p>
 
 <h2 class="title h2-desc" id="input-group">
-	CSS Input Group 
+  What is a CSS Input Group?
     </h2>
 
 <p class="content font-light">
-	To create an input group, CSS is used to control the layout, spacing, and alignment of the individual elements. By applying specific styles, you can ensure that inputs, buttons, and icons blend together seamlessly.
+  A CSS input group allows you to combine multiple form elements, such as text fields, dropdowns, buttons, or icons, into a single, unified component. This is especially useful when you want to provide users with more options in a compact, easy-to-use way, like adding a domain to an email address or selecting a country for a phone number.
+
+  By using CSS, you can control the layout, spacing, and alignment of the input group elements to make them look seamless and professional.
 </p>
 
-<ul>
-	<li class="mb-2"><strong>Display Flex:</strong> This ensures the elements within the input group are aligned horizontally or vertically.</li>
-	<li class="mb-2"><strong>Padding and Margin:</strong> Controls the spacing between individual elements in the group.</li>
-	<li class="mb-2"><strong>Border:</strong> Styles the borders of the input group, ensuring consistent appearance between inputs and buttons.
-	</li>
-	<li><strong>Width:</strong> Sets the width of the input group or its individual elements to ensure proper sizing..</li>
-</ul>
+
 
 
 
 
 <h2 class="title h2-desc" id="basic-example">
 	
-Basic Example
+  How to Create a Basic CSS Input Group
 </h2>
 
+<p class="content font-light">Astral.CSS lets you create input groups quickly and easily. Here are some examples to get you started:</p>
 
+
+<h3 class="title h3-desc">Example 1: Adding an "@" symbol to an input field</h3>
 <div class="input-group mb-3">
 <span class="input-group-addon" id="basic-addon1">@</span>
 <input type="text" class="form-input" placeholder="Username" aria-label="Username">
 </div>
                 
-
+<h3 class="title h3-desc">Example 2: Adding a domain to the input field</h3>
 <div class="input-group mb-3">
 <input type="text" class="form-input" placeholder="Recipient's username" aria-label="Recipient's username" >
 <span class="input-group-addon" id="basic-addon2">@example.com</span>
 </div>
 
-                <label for="basic-url" class="form-label">Your URL</label>
+
+<h3 class="title h3-desc">Example 3: Adding a URL prefix to an input</h3>
+<label for="basic-url" class="form-label">Your URL</label>
 <div class="input-group mb-3">
   <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
   <input type="text" class="form-input" id="basic-url">
 </div>
 
 
-
+<h3 class="title h3-desc">Example 4: Adding currency symbols to an amount input</h3>
 <div class="input-group mb-3">
       <span class="input-group-addon">$</span>
       <input type="text" class="form-input" aria-label="Amount (to the nearest dollar)">
@@ -430,24 +431,34 @@ Basic Example
 
 <h2 class="title h2-desc" id="button-addons">
         
-   Button Addons
+  Adding Buttons to Your Input Group
     </h2>
+
+    <p  class="content font-light">You can also extend input groups with buttons to offer users even more functionality. Buttons can be placed inside or alongside your input fields.</p>
+
+    
+
 <div class="content font-light">
+  <h3 class="title h3-desc">Example 1: Adding a button before the input field</h3>    
       <div class="input-group mb-3">
             <button class="button button-outline-primary" type="button" id="button-addon1">Button</button>
             <input type="text" class="form-input" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
           </div>
-          
+          <h3 class="title h3-desc">Example 2: Adding a button after the input field</h3> 
           <div class="input-group mb-3">
             <input type="text" class="form-input" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
             <button class="button button-outline-primary" type="button" id="button-addon2">Button</button>
           </div>
+
+          <h3 class="title h3-desc">Example 3: Adding two buttons to an input field
+            </h3> 
           
           <div class="input-group mb-3">
             <button class="button button-outline-primary" type="button">Button</button>
             <button class="button button-outline-primary" type="button">Button</button>
             <input type="text" class="form-input" placeholder="" aria-label="Example text with two button addons">
           </div>
+
           
           <div class="input-group">
             <input type="text" class="form-input" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
@@ -494,8 +505,12 @@ Basic Example
 
 
 
-<p class="content font-light">Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</p>
+<p class="content font-light">CSS input groups also support custom selects and custom file inputs, which aren't available in default browser styles.</p>
 
+
+<h3 class="title h3-desc">Example 1: Adding a custom select field
+  
+</h3> 
 
 <div class="input-group mb-3">
       <label class="input-group-addon" for="inputGroupSelect01">Options</label>
@@ -508,6 +523,9 @@ Basic Example
     </div>
 
 
+    <h3 class="title h3-desc">Example 2: Select field with addon on the right
+  
+    </h3>
     <div class="input-group mb-3">
       <select class="form-select" id="inputGroupSelect02">
         <option selected>Choose...</option>
@@ -562,6 +580,7 @@ Basic Example
 
 
 
+
 <pre class="user-select-all"><code data-language="html"><div class="input-group">
       <input type="file" class="form-input" name="" id="">
       <span class="input-group-addon"><i class="fa fa-upload"></i></span>
@@ -571,6 +590,19 @@ Basic Example
       <button class="button button-outline-primary" type="button" id="inputGroupFileAddon04">Button</button>
   </div>
 </code></pre>
+
+
+
+<h3 class="title" id="file">
+        
+  Why Use CSS Input Groups?
+    </h3>
+    <p  class="content font-light">
+      CSS input groups are a great way to improve the functionality and visual appeal of your forms. Whether you're adding buttons, dropdowns, or extra text to provide more context, input groups allow you to keep everything neat, organized, and easy for users to interact with.
+
+With Astral.CSS, it’s simple to integrate these features into your forms, enhancing both usability and design.
+    </p>
+
 
 
 
