@@ -319,13 +319,34 @@
   </div>
 
   
-<p class="content font-light">The <code>cursor</code> property in CSS controls the appearance of the mouse cursor when it hovers over an element. By default, web browsers display the standard arrow cursor for most elements and switch to the pointer cursor for interactive elements like links. However, developers can easily customize cursor styles using CSS. The default value of the <code>cursor</code>  property is set to  <code>'auto'</code>, which allows the browser to determine the most appropriate cursor based on the element type.</p>
+<p class="content font-light">
 
-  <h2 class="title h2-desc" id="default-cursor">
+  The <code>cursor</code> property in CSS is your go-to tool for controlling how the mouse pointer looks when it hovers over elements on your webpage. By default, browsers use an arrow cursor for most elements and switch to a hand (pointer) cursor for interactive ones like links.
+
+But why settle for defaults when you can create a more engaging experience? With CSS, you can easily customize cursor styles to match your design and guide users seamlessly through your site.
+  
+
+  </p>
+
+
+  <h2 class="title h2-desc" >
       
-   Cursor Pointer Default
+    Cursor Utilities and Examples
+   </h2>
+
+
+  <h2 class="title h3-desc" id="default-cursor">
+      
+    Default Cursor
   </h2>
-  <p class="content font-light">Use <code>cursor-auto</code> to allow the browser to change the cursor based on the current content (e.g. automatically change to <code>text</code> cursor when hovering over text).</p>
+  <p class="content font-light">
+
+    Let the browser decide the cursor style based on the content. Use <code>cursor-auto</code> for a hassle-free setup.
+    
+ 
+
+    
+    </p>
   
 <div class="panel">
 	<div style="background-color: rgb(243, 243, 243);" class="cursor-default text-dark  p-3 my-1"> Hover me</div>
@@ -336,11 +357,16 @@
 
 <pre class="user-select-all"><code data-language="html"><div class="cursor-default ..."> Hover me</div></code></pre>
   
-  <h2 class="title h2-desc" id="pointer-cursor">
+  <h2 class="title h3-desc" id="pointer-cursor">
       
-   Cursor Pointer
+    Pointer Cursor
   </h2>
-  <p class="content font-light">Use <code>cursor-pointer</code> to change the mouse cursor to indicate an interactive element (usually a pointing hand).</p>
+  <p class="content font-light">
+
+    Turn your cursor into a pointing hand to signal clickable elements like buttons or links. Use <code>cursor-pointer</code> 
+    
+ 
+    </p>
   <div class="panel">
 	<div style="background-color: rgb(243, 243, 243);" class="cursor-pointer text-dark  p-3 my-1"> Hover me</div>
   </div>
@@ -349,11 +375,14 @@
   <pre class="user-select-all"><code data-language="html"><div class="cursor-pointer ..."> Hover me</div></code></pre>
 
 
-  <h2 class="title h2-desc" id="move-cursor">
+  <h2 class="title h3-desc" id="move-cursor">
       
-    Cursor Pointer Move
+    Move Cursor
   </h2>
-  <p class="content font-light">Use <code>cursor-move</code> to change the mouse cursor to indicate something that can be moved.</p>
+  <p class="content font-light">
+    Want to indicate something draggable? Use <code>cursor-move</code> to change the cursor into a move icon.
+
+    </p>
   <div class="panel">
 	<div style="background-color: rgb(243, 243, 243);" class="cursor-move text-dark  p-3 my-1"> Hover me</div>
 
@@ -362,11 +391,16 @@
 <pre class="user-select-all"><code data-language="html"><div class="cursor-move ..."> Hover me</div></code></pre>
 
 
-  <h2 class="title h2-desc" id="text-cursor">
+  <h2 class="title h3-desc" id="text-cursor">
       
-    Cursor Pointer Move
+    Text Cursor
   </h2>
-  <p class="content font-light">Use <code>cursor-text</code> to change the mouse cursor to indicate the text can be selected (usually an I-beam shape).</p>
+  <p class="content font-light">
+
+    Highlight selectable text with an I-beam cursor using <code>cursor-text</code> .
+
+    
+   </p>
   <div class="panel">
 	<div style="background-color: rgb(243, 243, 243);" class="cursor-text text-dark  p-3 my-1"> Hover me</div>
   
@@ -375,11 +409,14 @@
 <pre class="user-select-all"><code data-language="html"><div class="cursor-text ...">Hover me</div></code></pre>
 
 
-  <h2 class="title h2-desc" id="zoom-in-cursor">
+  <h2 class="title h3-desc" id="zoom-in-cursor">
       
-    Cursor Pointer Zoom
+    Zoom In Cursor
   </h2>
-  <p>Use <code>cursor-zoom-in</code> to change the mouse cursor to indicate something is zoom in.</p>
+
+
+
+  <p>  Need to show zoom functionality? Use <code>cursor-zoom-in</code> to change the cursor to a magnifying glass with a plus icon.</p>
 
  <div class="panel">
 	<div style="background-color: rgb(243, 243, 243);" class="cursor-zoom-in text-dark  p-3 my-1"> Hover me</div>
@@ -389,12 +426,17 @@
 
 
 
-  <h2 class="title h2-desc" id="zoom-out-cursor">
+  <h2 class="title h3-desc" id="zoom-out-cursor">
       
-    Cursor Pointer Zoom Out
+    Zoom Out Cursor
   </h2>
 
-  <p>Use <code>cursor-zoom-out</code> to change the mouse cursor to indicate something is zoom out.</p>
+  <p>
+    Similar to zoom-in, but for zooming out. Use <code>cursor-zoom-out</code> to signal the action.
+
+  
+  
+  </p>
   <div class="panel">
 	<div style="background-color: rgb(243, 243, 243);" class="cursor-zoom-out text-dark  p-3 my-1"> Hover me</div>
   </div>
@@ -404,12 +446,18 @@
 
 
 
-  <h2 class="title h2-desc" id="not-allowed-cursor">
+  <h2 class="title h3-desc" id="not-allowed-cursor">
       
-    Cursor Pointer Not Allowed
+    Not Allowed Cursor
   </h2>
 
-  <p class="content font-light">Use <code>cursor-not-allowed</code> to change the mouse cursor to indicate something can not be interacted with or clicked.</p>
+  <p class="content font-light">
+    
+    When users can't interact with an element, use <code>cursor-not-allowed</code> to show a "no action" symbol.
+  
+  
+  
+  </p>
 
   <div class="panel">
 	<div style="background-color: rgb(243, 243, 243);" class="cursor-not-allowed text-dark  p-3 my-1"> Hover me</div>
@@ -421,12 +469,16 @@
 
 
 
-  <h2 class="title h2-desc" id="wait-cursor">
+  <h2 class="title h3-desc" id="wait-cursor">
       
-    Cursor Pointer Wait
+    Wait Cursor
   </h2>
 
-  <p class="content font-light">Use <code>cursor-wait</code> to change the mouse cursor to indicate something is happening in the background (usually an hourglass or spinner).</p>
+  <p class="content font-light">
+    
+    Show users that something is loading or processing with <code>cursor-wait</code>.
+    
+ </p>
   <div class="panel">
 	<div style="background-color: rgb(243, 243, 243);" class="cursor-wait text-dark  p-3 my-1"> Hover me</div>
 
@@ -434,7 +486,15 @@
 
 <pre class="user-select-all"><code data-language="html"><div class="cursor-wait ..."> Hover me</div></code></pre>
 
-
+<h2 class="title h2-desc" id="not-allowed-cursor">
+      
+  Quick Tips for Using CSS Cursors
+</h2>
+<ol>
+  <li class="mb-6"> <strong>Keep it simple:</strong> Use clear, intuitive cursor styles that align with the action.</li>
+  <li class="mb-6"> <strong>Enhance accessibility:</strong> Pair cursor changes with visual or textual cues for a better user experience.</li>
+  <li> <strong>Test across devices:</strong> Ensure cursor styles work well on all browsers and devices.</li>
+</ol>
 
 
 
