@@ -298,7 +298,7 @@
 	<div class="text-is-center">
 		<h1 class="header headline">Astral.js OTP Generator</h1>
 		<h2 class="mt-3 text-gray-500 md:text-lg fs-4">
-			A minimal JavaScript one-time password (OTP) generator module in Astral.js, designed to provide an easy and efficient way to generate secure OTPs for your web application.
+      A Minimal, Secure Solution for One-Time Passwords designed to provide an easy and efficient way to generate secure OTPs for your web application.
 		</h2>
     <div class="panel">
 <p>What is One Time Password Generator?</p>
@@ -319,19 +319,31 @@
 		What is a One-Time Password (OTP)?
 		  </h2>
 
-<p class="content font-light">A <strong> One-Time Password (OTP) </strong>is a unique code that is generated and used for a single login or transaction. OTPs are typically used in multi-factor authentication (MFA) to add an extra layer of security. Once the OTP is used, it cannot be reused, making it more secure than traditional passwords.</p>
+<p class="content font-light">
+  
+  A <strong> One-Time Password (OTP) </strong> is a unique, temporary code used for secure, single-use authentication. It's a staple in multi-factor authentication (MFA) systems, enhancing security by ensuring that even if a traditional password is compromised, the OTP provides an additional layer of protection. Once used, the OTP expires and cannot be reused.
+  </p>
 
-<p class="content font-light">One-time passwords are commonly used for:</p>
+<p class="content font-light">Common Use Cases for OTPs:</p>
 <ul class="mb-8">
-	<li class="mb-2">Secure logins to banking or financial services.</li>
-	<li class="mb-2">Two-factor authentication (2FA) for email, social media, and cloud storage accounts.</li>
-	<li>Verification codes sent via SMS or email for identity confirmation.</li>
+	<li class="mb-2">Banking and financial services: Secure logins and transactions.</li>
+	<li class="mb-2">Two-factor authentication (2FA): For accounts like email, social media, and cloud storage.</li>
+	<li>Verification codes: Sent via SMS or email to confirm identity.
+  </li>
 </ul>
 
 
+<h2 class="h2-desc">
+  What Is Astral.js OTP Generator?
+    </h2>
+<p class="font-light content">
+  The Astral.js OTP Generator is a lightweight JavaScript module designed for generating secure OTPs easily and efficiently. Whether you're building a financial app or adding 2FA to your website, Astral.js makes generating one-time passwords straightforward.
+</p>
 
 
-
+<h2 class="h2-desc">
+  Try it out :)
+    </h2>
 <form class="block mx-auto">
 	<div class="form-field input-group">
 		<input readonly="" class="form-input user-select-all" id="otpText" type="number" placeholder="Generate your first OTP..."> 
@@ -353,15 +365,51 @@
 
 
 
-<p class="text-weight-bold text-is-center mb-6 headline header">How to use our OTP Generator</p>
+<p class="text-weight-bold text-is-center mb-6 headline header">Generate Your First OTP with Astral.js</p>
 
 
-	<h2 class="title h2-desc">
-		Link
+	<h2 class="title h3-desc">
+    Step 1: Include the Astral.js Library
 		  </h2>
-		  <p class="content font-light">All ready-to-use files required </p>
+<p class="content font-light">Link the Astral.js script in your HTML file to get started.</p>
 
 <pre class="user-select-all" class="content font-light"><code data-language="html">&lt;script src="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/js/astral-v3.0.min.js">&lt;/script&gt;
+</code></pre>
+
+
+	<h2 class="h3-desc">Step 2: Generate an OTP</h2>
+	<p class="content font-light">
+    Astral.js makes OTP generation simple. Use the <code>OTP.generateOTP()</code>  method to create a secure code.
+    </p>
+    
+<pre class="user-select-all" >
+<code data-language="javascript">// Generate an OTP using default options
+OTP.generateOTP();</code></pre>
+    <p>The OTP will be displayed in the browser console.</p>
+    
+    
+    <h2 class="title h2-desc">
+      Options and Configuration
+    </h2>
+    <p class="content font-light">
+      Astral.js OTP Generator comes with customizable options to suit your needs. Below are the default settings:
+    </p>
+    
+    <pre class="user-select-all" >
+	<code data-language="javascript">var defaultOptions = {
+    limit: 4 // Number of digits in the OTP
+};
+</code></pre>
+<h2 class="title h2-desc">
+  Customizing the OTP:
+</h2>
+<p class="content font-light">
+  You can override the default options by passing your own settings to the <code>generateOTP</code>  method.
+</p>
+
+<pre class="user-select-all" >
+<code data-language="javascript">// Generate a 6-digit OTP
+OTP.generateOTP({ limit: 6 });
 </code></pre>
 
 
@@ -369,38 +417,38 @@
 
 
 
-	<h2 class="h2-desc">Usage</h2>
-	<p class="content font-light">
-	  Simply make a plugin instance and then create a message
-	  using any of the following methods:
-    </p>
-    
-    <pre class="user-select-all" >
-    <code data-language="javascript">OTP.generateOTP()</code>
-    </pre>
-    <p>a password will displayed in the console!</p>
-    
-    
-    <h2 class="title h2-desc">
-    Options
-    </h2>
-    <p class="content font-light">
-     Here are the default options
-    </p>
-    
-    <pre class="user-select-all" >
-	<code data-language="javascript">var defaultOptions = {
-	    limit: 4
-    };</code></pre>
+
     
     <h3 class="title">
-    Public methods
+      Public Methods in Astral.js
     </h3>
     <p class="content font-light">
-	List of available public methods:
+      Astral.js provides the following public method:
     </p>
+    <ul>
+      <li>OTP.generateOTP(userOptions): Generates an OTP with customizable options like the length of the password.</li>
+    </ul>
     <pre class="user-select-all" >
     <code data-language="javascript">OTP.generateOTP(userOptions);</code></pre>
+
+
+    <h3 class="title">
+      Why Choose Astral.js for OTP Generation?
+    </h3>
+    <ol>
+      <li class="mb-6 "><strong>Simplicity: </strong> Minimal setup with a focus on ease of use.</li>
+      <li class="mb-6 "><strong>Customization: </strong> Configure OTP length to meet your application's requirements.</li>
+      <li> <strong>Lightweight:</strong> No unnecessary dependencies, keeping your app fast.
+      </li>
+    </ol>
+
+
+
+
+
+
+
+
 
 
 
