@@ -27,7 +27,7 @@
       <link rel="stylesheet" href="../../../../css/github.css">
 	<link rel="stylesheet" href="../../../../css/docs.css">
 	<link rel="stylesheet" href="../../../../css/font-awesome.min.css">
-  <script src="https://alwingulla.com/88/tag.min.js" data-zone="124453" async data-cfasync="false"></script>
+
 
 
 </head>
@@ -302,7 +302,7 @@
 <div class="text-is-center">
 	<h1 class="header headline">Astral.CSS Toastify</h1>
 	<h2 class="mt-3 text-gray-500 md:text-lg fs-4">
-		A minimal JavaScript notification module in Astral.js that lets you display customizable toast messages with smooth CSS3 transitions on your web page.
+    Astral.CSS Toastify is a lightweight JavaScript notification module that helps you display customizable toast messages on your web page. With smooth CSS3 transitions and predefined styles, Toastify makes it easy to alert, notify, or update users with visually appealing messages.
 	</h2>
 </div>
    
@@ -331,53 +331,78 @@
   
   
   
-
-    
-    <h2 class="title h2-desc">
-  Link
-    </h2>
-    <p class="content font-light">All ready-to-use files required </p>
+    <h2 class="text-weight-bold text-is-center mb-6 headline header">Getting Started with Astral.CSS Toastify</h2>
+    <h3 class="title h3-desc">
+      Step 1: Include Required Files
+    </h3>
+    <p class="content font-light">To start using Toastify, include the Astral CSS and JavaScript files in your HTML file:</p>
   
 <pre class="user-select-all" class="content font-light"><code data-language="html">&lt;link href="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/css/astral.css-v3.0.min.css" rel="stylesheet" &gt;
 &lt;script src="https://cdn.jsdelivr.net/gh/thaboyaluya/astral.css-V3.0@master/js/astral-v3.0.min.js">&lt;/script&gt;
 </code></pre>
   
     <h2 class="title h2-desc">
-  Usage
+      Step 2: Display a Toast Notification
     </h2>
     <p class="content font-light">
-      Simply make a plugin instance and then create a message
-      using any of the following methods:
+      Toastify provides a simple API for displaying various types of notifications. Use any of the following methods to create your first toast:
   </p>
 
-<pre class="user-select-all"><code data-language="javascript">Toastify.default('Wow so easy')
-Toastify.success('Wow so easy')
-Toastify.error('Wow so easy')
-Toastify.warning('Wow so easy')
-Toastify.random() 
+<pre class="user-select-all"><code data-language="javascript">Toastify.default('Wow, so easy!');
+Toastify.success('Operation successful!');
+Toastify.error('Oops, something went wrong!');
+Toastify.warning('Heads up, check this out!');
+Toastify.info('Update Available');
+Toastify.random(); // Generates a random toast message  
 </code></pre>
-<p>a message will appear in your web application!</p>
+<p>When executed, these commands will display toast messages on your web page.</p>
   
   
   <h2 class="title h2-desc"> 
-  Options
+    Customizing Toast Notifications
   </h2>
-  <p class="content font-light">Here are the default options</p>
-<pre class="user-select-all"><code data-language="javascript">const options={
-    duration: 5000,// hide after 5000ms, // optional parameter
-    callback:function(){console.log('✅ I am a callback function,Write your own function to override this !')},// executed when toast is clicked / optional parameter
-    onHide:function(){console.log('✅ Do something after the toast disappears...')},// executed when toast has disappeared / optional parameter
-    position:'toasts-top-right'// available position are :toasts-top-left,toasts-bottom-right and toasts-bottom-left
+  <p class="content font-light">Toastify includes several configuration options to fine-tune the behavior and appearance of your toast messages. Below are the default settings:</p>
+<pre class="user-select-all"><code data-language="javascript">const options = {
+  duration: 5000, // Time (in ms) before the toast hides, default is 5000ms
+  callback: function() {
+      console.log('✅ I am a callback function. Write your own function to override this!');
+  }, // Executes when the toast is clicked (optional)
+  onHide: function() {
+      console.log('✅ Do something after the toast disappears...');
+  }, // Executes when the toast disappears (optional)
+  position: 'toasts-top-right' // Positions: 'toasts-top-left', 'toasts-bottom-right', 'toasts-bottom-left'
 };
 </code></pre>
   
+<h2 class="title h2-desc"> 
+  Customization Example
+  </h2>
+  <p class="content font-light">You can override the default options by passing your own parameters to the methods:</p>
+
+  <pre class="user-select-all"><code data-language="javascript">Toastify.success('File uploaded successfully!', {
+    duration: 3000,
+    position: 'toasts-bottom-left',
+    callback: function() {
+        console.log('✅ You clicked on the toast!');
+    },
+    onHide: function() {
+        console.log('✅ Toast disappeared.');
+    }
+});</code></pre>
 
   <h2 class="title h2-desc"> 
-  Public methods
+    Available Methods in Toastify
   </h2>
   <p class="content font-light">
-    List of available public methods:
+    Here’s the list of public methods to create different types of notifications:
   </p>
+  <ul>
+    <li class="mb-6">Toastify.default(message, userOptions): Displays a neutral notification.</li>
+    <li class="mb-6">Toastify.success(message, userOptions): Displays a success notification (e.g., green toast).</li>
+    <li class="mb-6">Toastify.error(message, userOptions): Displays an error notification (e.g., red toast).</li>
+    <li class="mb-6">Toastify.warning(message, userOptions): Displays a warning notification (e.g., yellow toast).</li>
+    <li>Toastify.random(): Displays a random toast message.</li>
+  </ul>
 <pre class="user-select-all"><code data-language="javascript">Toastify.default(message,userOptions)
 Toastify.success(message,userOptions)
 Toastify.error(message,userOptions)
